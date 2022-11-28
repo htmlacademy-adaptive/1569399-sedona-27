@@ -15,7 +15,22 @@
       </a>
 
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+
+          <svg class="main-nav__image main-nav__image-burger" aria-hidden="true" focusable="false" width="24"
+            height="20" viewBox="0 0 24 20" fill="#000000" xmlns="http://www.w3.org/2000/svg">
+            <path d="M24 0H0V4H24V0Z" />
+            <path d="M24 8H0V12H24V8Z" />
+            <path d="M24 16H0V20H24V16Z" />
+          </svg>
+
+          <svg class="main-nav__image main-nav__image-cross" aria-hidden="true" focusable="false" width="26" height="25"
+            viewBox="0 0 26 25" fill="#000000" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M26 3.15315L22.7207 0L13 9.34685L3.27928 0L0 3.15315L9.72072 12.5L0 21.8468L3.27928 25L13 15.6532L22.7207 25L26 21.8468L16.2793 12.5L26 3.15315Z" />
+          </svg>
+        </button>
 
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
@@ -58,16 +73,18 @@
       </section>
 
       <section class="advantages">
-        <div class="advantages__wrapper">
+        <div class="advantages__description-wrapper description">
           <h2 class="visually-hidden">Преимущества.</h2>
-          <p class="advantages__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
-          <p class="advantages__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+          <p class="advantages__description-title description__title">Седона — небольшой городок в Аризоне,
+            заслуживающий большего!</p>
+          <p class="advantages__description-text description__text">Рассмотрим 5 причин, по которым Седона круче, чем
+            гранд каньон!</p>
         </div>
 
         <ul class="advantages__list">
           <li class="advantages__item">
-            <div class="advantages__accent-wrapper">
-              <div class="advantages__wrapper">
+            <div class="advantages__item-accent-wrapper">
+              <div class="advantages__item-wrapper">
                 <h3 class="advantages__title">Настоящий городок</h3>
                 <p class="advantages__number">— №1 —</p>
                 <p class="advantages__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
@@ -136,13 +153,14 @@
       </section>
 
       <section class="search">
-        <div class="search__wrapper">
-          <h2 class="search__title">Заинтересовались?</h2>
+        <div class="search__wrapper description">
+          <h2 class="search__title description-title">Заинтересовались?</h2>
 
-          <p class="search__test">Укажите предполагаемые датыпоездки, и мы покажем вам лучшиепредложения гостиниц в
+          <p class="search__text description-text">Укажите предполагаемые датыпоездки, и мы покажем вам
+            лучшиепредложения гостиниц в
             седоне</p>
 
-          <a class="search__button button" href="search.html">Найти гостиницу</a>
+          <a class="search__button button" href="catalog.html">Найти гостиницу</a>
         </div>
       </section>
 
@@ -201,7 +219,7 @@
             </ul>
           </section>
 
-          <section class="maain-footer__copyright footer-copyright">
+          <section class="main-footer__copyright footer-copyright">
             <h2 class="visually-hidden">Копирайт.</h2>
 
             <b class="footer-copyright__text">Разработано</b>
