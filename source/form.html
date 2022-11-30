@@ -18,15 +18,15 @@
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
 
-          <svg class="main-nav__image main-nav__image-burger" aria-hidden="true" focusable="false" width="24"
+          <svg class="main-nav__image main-nav__image--burger" aria-hidden="true" focusable="false" width="24"
             height="20" viewBox="0 0 24 20" fill="#000000" xmlns="http://www.w3.org/2000/svg">
             <path d="M24 0H0V4H24V0Z" />
             <path d="M24 8H0V12H24V8Z" />
             <path d="M24 16H0V20H24V16Z" />
           </svg>
 
-          <svg class="main-nav__image main-nav__image-cross" aria-hidden="true" focusable="false" width="26" height="25"
-            viewBox="0 0 26 25" fill="#000000" xmlns="http://www.w3.org/2000/svg">
+          <svg class="main-nav__image main-nav__image--cross" aria-hidden="true" focusable="false" width="26"
+            height="25" viewBox="0 0 26 25" fill="#000000" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M26 3.15315L22.7207 0L13 9.34685L3.27928 0L0 3.15315L9.72072 12.5L0 21.8468L3.27928 25L13 15.6532L22.7207 25L26 21.8468L16.2793 12.5L26 3.15315Z" />
           </svg>
@@ -40,13 +40,6 @@
 
             <li class="main-nav__item">
               <a class="main-nav__link" href="catalog.html">Фото и видео</a>
-            </li>
-
-            <li class="main-nav__item main-nav__item--logo">
-              <a class="main-nav__link main-nav__link--logo logo" href="index.html">
-                <img class="main-nav__logo-image logo-image" src="img/logo/sedona-logo.svg" width="185" height="96"
-                  alt="Логотип сайта города «Седона» с изображнием гор.">
-              </a>
             </li>
 
             <li class="main-nav__item">
@@ -273,9 +266,10 @@
 
       <div class="modal-container modal-container--error">
         <div class="modal">
-          <section class="modal__content ">
-            <h2 class="modal__title">Что-то пошло не так!</h2>
-            <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+          <section class="modal__content description">
+            <h2 class="modal__title description__title">Что-то пошло не так!</h2>
+            <p class="modal__text description__text">Проверьте поля, выделенные красным, скорее всего вы забыли их
+              заполнить</p>
 
             <button class="modal__button modal__button--close button" type="button">Oк</button>
           </section>
@@ -284,9 +278,10 @@
 
       <div class="modal-container modal-container--success">
         <div class="modal">
-          <section class="modal__content">
-            <h2 class="modal__title">Ваш отзыв отправлен!</h2>
-            <p class="modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы опубликуем
+          <section class="modal__content description">
+            <h2 class="modal__title description__title">Ваш отзыв отправлен!</h2>
+            <p class="modal__text description__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее
+              время мы опубликуем
               его на сайте.</p>
 
             <div class="modal__button-wrapper">
