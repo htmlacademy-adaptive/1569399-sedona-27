@@ -1,0 +1,16 @@
+.footer-contacts {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.footer-contacts__text {
+  @include margin-padding-0;
+}
+
+.footer-contacts__text:not(:last-child) {
+  margin-bottom: 15px;
+}

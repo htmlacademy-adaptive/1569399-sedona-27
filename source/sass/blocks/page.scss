@@ -1,0 +1,29 @@
+.page {
+  height: 100%;
+}
+
+.page__body {
+  margin: 0;
+  min-height: 100%;
+
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+
+  background-color: $color-surface;
+}
+
+.page__container {
+  @include margin-0-auto();
+
+  width: 320px;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background-color: $color-main;
+  box-shadow: 0 0 15px $color-shadow-02;
+}

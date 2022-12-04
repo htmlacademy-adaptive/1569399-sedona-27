@@ -1,0 +1,21 @@
+.button {
+  padding: 18px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  color: $color-main;
+  background-color: $color-accent;
+
+  @include button-accent-status;
+
+  &--active {
+    @include button-accent-status-active;
+  }
+}

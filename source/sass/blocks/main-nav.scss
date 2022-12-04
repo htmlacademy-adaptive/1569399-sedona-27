@@ -1,0 +1,96 @@
+.main-nav {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: $color-main;
+  background-color: $color-main;
+}
+
+// Button
+.main-nav__toggle {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  padding: 0;
+  width: 64px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.main-nav__image {
+  fill: $color-accent;
+
+  &:hover {
+    fill: $color-accent-06;
+  }
+
+  &:focus {
+    fill: $color-accent-06;
+  }
+
+  &:active {
+    fill: $color-accent-03;
+  }
+
+  &--burger {
+    display: none;
+  }
+
+  &--cross {
+    fill: $color-main;
+
+    &:hover {
+      fill: $color-main-06;
+    }
+
+    &:focus {
+      fill: $color-main-06;
+    }
+
+    &:active {
+      fill: $color-main-03;
+    }
+  }
+}
+
+
+// List
+.main-nav__wrapper {
+  background-color: $color-accent;
+}
+
+.main-nav__list {
+  @include list-style-none;
+}
+
+.main-nav__item {
+
+}
+
+.main-nav__link {
+  position: relative;
+  height: 100%;
+  display: block;
+  padding: 17px 60px;
+  padding-bottom: 12px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  color: $color-main;
+  outline: none;
+
+  @include button-accent-status;
+
+  &--active {
+    @include button-accent-status-active;
+  }
+}

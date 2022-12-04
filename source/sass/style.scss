@@ -1,1 +1,18 @@
 // Начните писать стили здесь
+@import "./global/variables";
+@import "./global/fonts";
+@import "./global/mixins";
+@import "./global/global";
+@import "./blocks/page";
+@import "./blocks/logo";
+@import "./blocks/button";
+@import "./blocks/main-header";
+@import "./blocks/main-nav";
+@import "./blocks/hero";
+@import "./blocks/advantages";
+@import "./blocks/search";
+@import "./blocks/map";
+@import "./blocks/main-footer";
+@import "./blocks/footer-contacts";
+@import "./blocks/footer-social";
+@import "./blocks/footer-copyright";

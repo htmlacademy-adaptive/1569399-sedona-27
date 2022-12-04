@@ -1,0 +1,167 @@
+.advantages {
+  text-align: center;
+  text-transform: uppercase;
+  background-color: $color-main;
+}
+
+// Описание
+.advantages__description-wrapper {
+  padding: 32px 18px;
+}
+
+.advantages__description-title {
+  @include title;
+
+  &:not(:last-child) {
+    margin-bottom: 35px;
+  }
+}
+
+.advantages__description-text {
+  @include text;
+
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+
+// Преимущества - основной список
+.advantages__list {
+  @include list-style-none;
+}
+
+.advantages__item {
+  position: relative;
+  background-color: $color-surface-lighten;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 18px;
+    right: 18px;
+    bottom: 0;
+    height: 1px;
+    background-color: $color-surface-border;
+  }
+
+  &:last-child::before {
+    content: none;
+  }
+
+  &--accent {
+    color: $color-main;
+    background-color: $color-accent;
+
+    &::before {
+      content: none;
+    }
+
+    &:first-child {
+      padding-top: 55px;
+      background-image: url(../img/background/background-triangle-2@1.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: top;
+    }
+  }
+}
+
+.advantages__item-wrapper {
+  padding: 24px 18px;
+
+  &--accent {
+    padding: 37px 18px;
+  }
+}
+
+.advantages__item-accent-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.advantages__title {
+  @include title;
+
+  &:not(:last-child) {
+    margin-bottom: 11px;
+  }
+
+  &--accent {
+    color: $color-main;
+  }
+}
+
+.advantages__number {
+  &:not(:last-child) {
+    margin-bottom: 11px;
+  }
+}
+
+.advantages__text {
+  @include text;
+
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+
+.advantages__image {
+
+}
+
+// Преимущества - внутренний список
+.advantages__sub-list {
+  @include list-style-none;
+
+  padding: 23px 18px;
+  text-align: left;
+  color: $color-secondary-light;
+  background-color: $color-main;
+}
+
+.advantages__sub-item {
+  position: relative;
+  margin-bottom: 25px;
+  padding-top: 8px;
+  padding-left: 47px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+  &--house::before {
+    background-image: url("../../img/advantages/advantages-icon-house.svg");
+  }
+
+  &--food::before {
+    background-image: url("../../img/advantages/advantages-icon-food.svg");
+  }
+
+  &--souvenirs::before {
+    background-image: url("../../img/advantages/advantages-icon-souvenirs.svg");
+  }
+}
+
+.advantages__sub-title {
+  @include title;
+
+  &:not(:last-child) {
+    margin-bottom: 11px;
+  }
+}
+
+.advantages__sub-text {
+  @include text;
+
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}

@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
@@ -47,7 +48,7 @@
             </li>
 
             <li class="main-nav__item">
-              <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
+              <a class="main-nav__link main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
             </li>
           </ul>
         </div>
@@ -75,10 +76,10 @@
         </div>
 
         <ul class="advantages__list">
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--accent">
             <div class="advantages__item-accent-wrapper">
-              <div class="advantages__item-wrapper">
-                <h3 class="advantages__title">Настоящий городок</h3>
+              <div class="advantages__item-wrapper advantages__item-wrapper--accent">
+                <h3 class="advantages__title advantages__title--accent">Настоящий городок</h3>
                 <p class="advantages__number">— №1 —</p>
                 <p class="advantages__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
               </div>
@@ -88,27 +89,33 @@
             </div>
 
             <ul class="advantages__sub-list">
-              <li class="advantages__sub-item advantages__sub-item--home">
+              <div class="advantages__sub-item-wrapper">
+              <li class="advantages__sub-item advantages__sub-item--house">
                 <h4 class="advantages__sub-title">Жилье</h4>
                 <p class="advantages__sub-text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
               </li>
+              </div>
 
+              <div class="advantages__sub-item-wrapper">
               <li class="advantages__sub-item advantages__sub-item--food">
                 <h4 class="advantages__sub-title">Еда</h4>
                 <p class="advantages__sub-text">Всегда заказывайте Фирменный бургер, Вы не разочаруетесь!</p>
               </li>
+            </div>
 
+              <div class="advantages__sub-item-wrapper">
               <li class="advantages__sub-item advantages__sub-item--souvenirs">
                 <h4 class="advantages__sub-title">Сувениры</h4>
                 <p class="advantages__sub-text">Не только китайского, но и местного производства!</p>
               </li>
+            </div>
             </ul>
           </li>
 
-          <li class="advantages__item">
-            <div class="advantages__accent-wrapper">
-              <div class="advantages__wrapper">
-                <h3 class="advantages__title">Там есть Мост дьявола</h3>
+          <li class="advantages__item advantages__item--accent">
+            <div class="advantages__item-accent-wrapper">
+              <div class="advantages__item-wrapper advantages__item-wrapper--accent">
+                <h3 class="advantages__title advantages__title--accent">Там есть Мост дьявола</h3>
                 <p class="advantages__number">— №2 —</p>
                 <p class="advantages__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
               </div>
@@ -119,7 +126,7 @@
           </li>
 
           <li class="advantages__item">
-            <div class="advantages__wrapper">
+            <div class="advantages__item-wrapper">
               <h3 class="advantages__title">Небольшая площадь</h3>
               <p class="advantages__number">— №3 —</p>
               <p class="advantages__text">Вск интересные места находятся очень близко</p>
@@ -127,7 +134,7 @@
           </li>
 
           <li class="advantages__item">
-            <div class="advantages__wrapper">
+            <div class="advantages__item-wrapper">
               <h3 class="advantages__title">Красивая дорогая</h3>
               <p class="advantages__number">— №4 —</p>
               <p class="advantages__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
@@ -135,7 +142,7 @@
           </li>
 
           <li class="advantages__item">
-            <div class="advantages__wrapper">
+            <div class="advantages__item-wrapper">
               <h3 class="advantages__title">Мало туристов</h3>
               <p class="advantages__number">— №5 —</p>
               <p class="advantages__text">Укажите предполагаемые датыпоездки, и мы покажем вам лучшиепредложения
@@ -160,8 +167,7 @@
       <section class="map">
         <div class="map__wrapper">
           <h2 class="visually-hidden">Как до нас добраться?</h2>
-
-          <img class="map__image" src="img/map/map-1@1.jpg" width="320" height="350" alt="Sedona, Аризона 86336, США">
+          <span class="visually-hidden">Sedona, Аризона 86336, США.</span>
         </div>
       </section>
 
@@ -215,8 +221,8 @@
           <section class="main-footer__copyright footer-copyright">
             <h2 class="visually-hidden">Копирайт.</h2>
 
-            <b class="footer-copyright__text">Разработано</b>
             <a class="footer-copyright__link" href="https://htmlacademy.ru/">
+              <span class="footer-copyright__text">Разработано</span>
               <span class="visually-hidden">HTML Academy.</span>
               <svg class="footer-copyright__image" aria-hidden="true" focusable="false" width="32" height="32"
                 viewBox="0 0 32 32" fill="#000000" xmlns="http://www.w3.org/2000/svg">
