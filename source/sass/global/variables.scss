@@ -9,6 +9,7 @@ $color-surface-darken: #e6e6e6;
 $color-surface-border: #d6d6d6;
 
 $color-main: #ffffff;
+$color-main-07: rgba($color-main, 0.7);
 $color-main-06: rgba($color-main, 0.6);
 $color-main-03: rgba($color-main, 0.3);
 
@@ -27,3 +28,5 @@ $color-accent-secondary: #766357;
 
 $color-shadow: #000101;
 $color-shadow-02: rgba($color-shadow, 0.2);
+
+$p-l-r: 20px;

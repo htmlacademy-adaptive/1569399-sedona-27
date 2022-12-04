@@ -1,5 +1,6 @@
 .hero {
-  padding: 90px 0 85px;
+  min-height: 160px;
+  padding: 90px $p-l-r 85px;
   text-align: center;
   color: $color-main;
   background-color: $color-accent-dark;
@@ -9,6 +10,11 @@
   background-repeat: no-repeat;
   background-size: contain, cover;
   background-position: bottom, center;
+
+  &--secondary {
+    background-position: bottom, bottom;
+    padding: 60px $p-l-r 67px;
+  }
 
   // clip-path: polygon(100% 0, 100% 92%, 50% 100%, 0 92%, 0 0);
 }

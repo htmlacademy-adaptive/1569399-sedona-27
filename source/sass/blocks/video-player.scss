@@ -1,0 +1,48 @@
+.video-player {
+  position: relative;
+  width: 280px;
+  height: 177px;
+  cursor: pointer;
+}
+
+.video-player__image {
+  display: block;
+  object-fit: cover;
+  background-color: $color-surface-lighten;
+}
+
+.video-player__button {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  padding: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.video-player__icon {
+  width: 48px;
+  height: 54px;
+  fill: $color-main-07;
+}
+
+.video-player__button:hover .video-player__icon {
+  fill: $color-main;
+}
+
+.video-player__button:focus .video-player__icon {
+  fill: $color-main;
+}
+
+
+.video-player__button:active .video-player__icon {
+  fill: $color-main-07;
+}

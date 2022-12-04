@@ -1,0 +1,36 @@
+.video {
+  padding: 17px $p-l-r 0;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: $color-main;
+}
+
+.video__description-title {
+  @include title;
+
+  &:not(:last-child) {
+    margin-bottom: 25px;
+  }
+}
+
+.video__description-text {
+  @include text;
+
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+
+.video__player-wrapper {
+  margin-top: 40px;
+}
+
+.video__player-image {
+
+}
+
+.video__player-button {
+}
+
+.video__player-icon {
+}

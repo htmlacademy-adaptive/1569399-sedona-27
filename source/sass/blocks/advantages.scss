@@ -6,14 +6,14 @@
 
 // Описание
 .advantages__description-wrapper {
-  padding: 32px 18px;
+  padding: 32px $p-l-r;
 }
 
 .advantages__description-title {
   @include title;
 
   &:not(:last-child) {
-    margin-bottom: 35px;
+    margin-bottom: 25px;
   }
 }
 
@@ -37,8 +37,8 @@
   &::before {
     content: "";
     position: absolute;
-    left: 18px;
-    right: 18px;
+    left: $p-l-r;
+    right: $p-l-r;
     bottom: 0;
     height: 1px;
     background-color: $color-surface-border;
@@ -67,10 +67,10 @@
 }
 
 .advantages__item-wrapper {
-  padding: 24px 18px;
+  padding: 24px $p-l-r;
 
   &--accent {
-    padding: 37px 18px;
+    padding: 37px $p-l-r;
   }
 }
 
@@ -113,7 +113,7 @@
 .advantages__sub-list {
   @include list-style-none;
 
-  padding: 23px 18px;
+  padding: 23px $p-l-r;
   text-align: left;
   color: $color-secondary-light;
   background-color: $color-main;
