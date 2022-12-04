@@ -1,0 +1,106 @@
+.survey {
+  background-color: $color-main#ffffff;
+}
+
+// Описание
+.survey__description-wrapper {
+  padding: 36px $p-l-r 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.survey__description-title {
+  @include title;
+
+  &:not(:last-child) {
+    margin-bottom: 25px;
+  }
+}
+
+.survey__description-text {
+  @include text;
+
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+
+// Форма опроса
+.survey__form-wrapper {
+}
+
+.survey__form {
+}
+
+.survey__group {
+  @include margin-padding-0;
+  padding: 24px $p-l-r;
+
+  border: none;
+  border-top: 1px solid $color-surface-dark;
+
+  &:last-child {
+    border-bottom: 1px solid $color-surface-dark;
+  }
+}
+
+.survey__title {
+  @include margin-padding-0;
+}
+
+.survey__input {
+}
+
+.survey__input-title {
+}
+
+.survey__input-field {
+}
+
+.survey__input-field--icon {
+}
+
+.survey__input-field--icon-phone {
+}
+
+.survey__input-field--icon-email {
+}
+
+.survey__list {
+}
+
+.survey__item {
+}
+
+.survey__control {
+}
+
+.survey__control-input {
+}
+
+.visually-hidden {
+}
+
+.survey__control-radio {
+}
+
+.survey__control-label {
+}
+
+.survey__control-mark {
+}
+
+.survey__comment {
+}
+
+.survey__button-wrapper {
+}
+
+.survey__button {
+}
+
+.survey__button--send {
+}
+
+.survey__note {
+}
