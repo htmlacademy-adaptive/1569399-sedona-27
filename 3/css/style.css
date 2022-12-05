@@ -92,6 +92,7 @@ img {
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
+  outline: none;
   border: none;
   cursor: pointer;
   color: #ffffff;
@@ -188,6 +189,13 @@ img {
 }
 .main-nav__image--cross:active {
   fill: rgba(255, 255, 255, 0.3);
+}
+
+.main-nav__toggle:focus .main-nav__image {
+  fill: rgba(129, 179, 210, 0.6);
+}
+.main-nav__toggle:focus .main-nav__image--cross {
+  fill: rgba(255, 255, 255, 0.6);
 }
 
 .main-nav__wrapper {
@@ -350,7 +358,7 @@ img {
 }
 .advantages__item--accent:first-child {
   padding-top: 55px;
-  background-image: url(../img/background/background-triangle-2@1.svg);
+  background-image: url("../img/background/background-triangle-2@1.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top;
@@ -425,13 +433,13 @@ img {
   background-size: contain;
 }
 .advantages__sub-item--house::before {
-  background-image: url("../../img/advantages/advantages-icon-house.svg");
+  background-image: url("../img/advantages/advantages-icon-house.svg");
 }
 .advantages__sub-item--food::before {
-  background-image: url("../../img/advantages/advantages-icon-food.svg");
+  background-image: url("../img/advantages/advantages-icon-food.svg");
 }
 .advantages__sub-item--souvenirs::before {
-  background-image: url("../../img/advantages/advantages-icon-souvenirs.svg");
+  background-image: url("../img/advantages/advantages-icon-souvenirs.svg");
 }
 
 .advantages__sub-title {
@@ -492,7 +500,7 @@ img {
 .map {
   min-height: 350px;
   background-color: #eeeeee;
-  background-image: url("../../img/map/map-1@1.jpg");
+  background-image: url("../img/map/map-1@1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -879,6 +887,18 @@ img {
   background-color: #333333;
 }
 
+.survey__control:hover .survey__control-radio {
+  background-color: #e5e5e5;
+}
+
+.survey__control-input:focus + .survey__control-radio {
+  background-color: #e5e5e5;
+}
+
+.survey__control-input:disabled + .survey__control-radio {
+  background-color: #d5d5d5;
+}
+
 .survey__control-mark {
   position: absolute;
   left: 0;
@@ -888,6 +908,24 @@ img {
   border-radius: 4px;
   outline: none;
   background-color: #f2f2f2;
+}
+
+.survey__control-input--mark:checked + .survey__control-mark {
+  background-image: url("../img/icon/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.survey__control:hover .survey__control-mark {
+  background-color: #e5e5e5;
+}
+
+.survey__control-input:focus + .survey__control-mark {
+  background-color: #e5e5e5;
+}
+
+.survey__control-input:disabled + .survey__control-mark {
+  background-color: #d5d5d5;
 }
 
 .survey__control-label {
