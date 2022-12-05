@@ -59,6 +59,14 @@
   }
 }
 
+.main-nav__toggle:focus .main-nav__image {
+  fill: $color-accent-06;
+
+  &--cross {
+    fill: $color-main-06;
+  }
+}
+
 
 // List
 .main-nav__wrapper {

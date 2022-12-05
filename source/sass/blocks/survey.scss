@@ -138,6 +138,7 @@
   position: relative;
 }
 
+// Radio control
 .survey__control-radio {
   position: absolute;
   left: 0;
@@ -164,6 +165,19 @@
   }
 }
 
+.survey__control:hover .survey__control-radio {
+  background-color: $color-surface-dark;
+}
+
+.survey__control-input:focus + .survey__control-radio {
+  background-color: $color-surface-dark;
+}
+
+.survey__control-input:disabled + .survey__control-radio {
+  background-color: $color-surface-border-light;
+}
+
+// Mark control
 .survey__control-mark {
   position: absolute;
   left: 0;
@@ -173,6 +187,24 @@
   border-radius: 4px;
   outline: none;
   background-color: $color-surface;
+}
+
+.survey__control-input--mark:checked + .survey__control-mark {
+  background-image: url("../img/icon/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.survey__control:hover .survey__control-mark {
+  background-color: $color-surface-dark;
+}
+
+.survey__control-input:focus + .survey__control-mark {
+  background-color: $color-surface-dark;
+}
+
+.survey__control-input:disabled + .survey__control-mark {
+  background-color: $color-surface-border-light;
 }
 
 .survey__control-label {
