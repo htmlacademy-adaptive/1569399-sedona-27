@@ -26,8 +26,8 @@
 }
 
 // Галерея
-.catalog__product-list-wrapper {
-}
+// .catalog__product-list-wrapper {
+// }
 
 .catalog__product-list {
   @include list-style-none;
@@ -64,9 +64,8 @@
   background-color: $color-surface-lighten;
 }
 
-.catalog__product-description {
-
-}
+// .catalog__product-description {
+// }
 
 .catalog__product-wrapper {
   margin-bottom: 11px;
@@ -106,8 +105,8 @@
   margin: 0;
 }
 
-.catalog__product-name {
-}
+// .catalog__product-name {
+// }
 
 .catalog__product-like-wrapper {
   display: flex;

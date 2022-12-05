@@ -98,5 +98,6 @@
 
 @mixin text() {
   text-transform: uppercase;
-  @include margin-padding-0();
+
+  @include margin-padding-0;
 }
