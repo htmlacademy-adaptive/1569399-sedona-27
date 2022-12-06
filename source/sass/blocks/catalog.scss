@@ -1,0 +1,158 @@
+.catalog {
+  text-align: center;
+  text-transform: uppercase;
+  background-color: $color-main;
+}
+
+// Описание
+.catalog__description-wrapper {
+  padding: 36px $p-l-r 28px;
+}
+
+.catalog__description-title {
+  @include title;
+
+  &:not(:last-child) {
+    margin-bottom: 25px;
+  }
+}
+
+.catalog__description-text {
+  @include text;
+
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+
+// Галерея
+// .catalog__product-list-wrapper {
+// }
+
+.catalog__product-list {
+  @include list-style-none;
+  @include margin-padding-0();
+
+  text-align: left;
+  text-transform: none;
+}
+
+.catalog__product-item {
+  padding: 24px $p-l-r;
+  border-top: 1px solid $color-surface-dark;
+
+  &:last-child {
+    border-bottom: 1px solid $color-surface-dark;
+  }
+}
+
+.catalog__product-link-image {
+  display: block;
+  margin-bottom: 15px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  text-decoration: none;
+  color: $color-secondary;
+}
+
+.catalog__product-image {
+  display: block;
+  height: 280px;
+  object-fit: contain;
+  background-color: $color-surface-lighten;
+}
+
+// .catalog__product-description {
+// }
+
+.catalog__product-wrapper {
+  margin-bottom: 11px;
+}
+
+.catalog__product-link {
+  margin-bottom: 6px;
+  display: block;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $color-secondary;
+  outline: none;
+
+  &:hover {
+    color: $color-accent;
+  }
+
+  &:focus {
+    color: $color-accent;
+  }
+
+  &:active {
+    color: $color-surface-lightest;
+  }
+}
+
+.catalog__product-title {
+  margin: 0;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.catalog__product-author {
+  margin: 0;
+}
+
+// .catalog__product-name {
+// }
+
+.catalog__product-like-wrapper {
+  display: flex;
+}
+
+.catalog__product-like-link {
+  display: flex;
+  align-items: baseline;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-decoration: none;
+  color: $color-secondary;
+  outline: none;
+
+  &:hover {
+    color: $color-accent;
+  }
+
+  &:focus {
+    color: $color-accent;
+  }
+
+  &:active {
+    color: $color-surface-lightest;
+  }
+}
+
+.catalog__product-like-image {
+  margin-right: 14px;
+  fill: $color-secondary-03;
+}
+
+.catalog__product-like-link:hover .catalog__product-like-image {
+  fill: $color-accent;
+}
+
+.catalog__product-like-link:focus .catalog__product-like-image {
+  fill: $color-accent;
+}
+
+.catalog__product-like-link:active .catalog__product-like-image {
+  fill: $color-surface-lightest;
+}
+
+.catalog__product-like-number {
+  margin: 0;
+}

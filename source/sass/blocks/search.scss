@@ -1,0 +1,30 @@
+.search {
+  padding: 38px $p-l-r 49px;
+
+  text-align: center;
+  text-transform: uppercase;
+  background-color: $color-main;
+}
+
+// .search__wrapper {
+// }
+
+.search__title {
+  @include title;
+
+  &:not(:last-child) {
+    margin-bottom: 35px;
+  }
+}
+
+.search__text {
+  @include text;
+
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+
+.search__button {
+  display: block;
+}

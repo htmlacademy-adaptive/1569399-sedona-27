@@ -1,0 +1,103 @@
+// Доступно скрывает элементы
+@mixin visually-hidden() {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+// Выравнивание по центру по горизонтали
+@mixin margin-0-auto() {
+  margin: 0 auto;
+}
+
+// Сброс Margin и Paddint
+@mixin margin-padding-0() {
+  margin: 0;
+  padding: 0;
+}
+
+// Сброс стилей у списка
+@mixin list-style-none {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+// Стили состояний акцентной кнопки
+@mixin button-accent-status {
+  &:hover {
+    background-color: $color-accent-dark;
+  }
+
+  &:focus {
+    background-color: $color-accent-dark;
+  }
+
+  &:active {
+    color: $color-main-03;
+    background-color: $color-accent-darken;
+  }
+
+  &:disabled {
+    background-color: $color-surface-dark;
+  }
+}
+
+// Стили состояний акцентной активной кнопки
+@mixin button-accent-status-active {
+
+  color: $color-main-03;
+  background-color: $color-accent;
+
+  &:hover {
+    color: $color-main-03;
+    background-color: $color-accent;
+  }
+
+  &:focus {
+    color: $color-main-03;
+    background-color: $color-accent;
+  }
+}
+
+// Стили состояний акцентной выключенной кнопки
+@mixin button-accent-status-disabled {
+  &--disabled {
+    background-color: $color-surface-dark;
+
+    &:hover {
+      background-color: $color-surface-dark;
+    }
+
+    &:focus {
+      background-color: $color-surface-dark;
+    }
+
+    &:active {
+      background-color: $color-surface-dark;
+    }
+  }
+}
+
+@mixin title() {
+  @include margin-padding-0();
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: $color-secondary;
+  text-transform: uppercase;
+}
+
+@mixin text() {
+  text-transform: uppercase;
+
+  @include margin-padding-0;
+}

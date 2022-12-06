@@ -1,0 +1,39 @@
+// .footer-social {
+// }
+
+.footer-social__list {
+  @include list-style-none;
+  @include margin-padding-0;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-social__item {
+  margin-bottom: 6px;
+}
+
+.footer-social__item:not(:last-child) {
+  margin-right: 6px;
+}
+
+.footer-social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  text-decoration: none;
+  outline: none;
+  background-color: $color-accent;
+
+  @include button-accent-status;
+}
+
+.footer-social__image {
+  fill: $color-main;
+}
+
+.footer-social__link:active .footer-social__image {
+  fill: $color-main-03;
+}

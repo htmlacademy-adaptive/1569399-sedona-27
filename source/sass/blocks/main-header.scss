@@ -1,0 +1,17 @@
+.main-header {
+  position: relative;
+  min-height: 56px;
+  color: $color-secondary;
+  background-color: $color-main;
+}
+
+.main-header__logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+// .main-header__logo-image {
+// }

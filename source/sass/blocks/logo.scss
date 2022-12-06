@@ -1,0 +1,13 @@
+.logo {
+  position: relative;
+  z-index: 2;
+  width: 140px;
+  outline: none;
+
+  text-transform: uppercase;
+  color: $color-accent;
+}
+
+.logo__image {
+  display: block;
+}
