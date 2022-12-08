@@ -1,4 +1,4 @@
-
+// Colors
 $color-surface-lightest: #b3b3b3;
 $color-surface-lighten: #eeeeee;
 $color-surface-light: #eaeaea;
@@ -35,4 +35,19 @@ $color-accent-secondary: #766357;
 $color-shadow: #000101;
 $color-shadow-02: rgba($color-shadow, 0.2);
 
+// Ширины устройств
+$width-tablet: 768px;
+
+$width-desctop: 1200px;
+
+// Внутренние отступы слева и справа для контейнера
 $p-l-r: 20px;
+
+$p-l-r-tablet: 60px;
+
+$p-l-r-desctop: 120px;
+
+@media (min-width: $width-tablet) {
+  $p-l-r: 60px;
+}
+

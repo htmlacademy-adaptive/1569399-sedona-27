@@ -26,4 +26,12 @@
   flex-direction: column;
   background-color: $color-main;
   box-shadow: 0 0 15px $color-shadow-02;
+
+  @media (min-width: $width-tablet) {
+    width: $width-tablet;
+  }
+
+  @media (min-width: $width-desctop) {
+    width: $width-desctop;
+  }
 }

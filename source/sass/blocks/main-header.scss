@@ -11,6 +11,10 @@
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
+
+  @media (min-width: $width-tablet) {
+    z-index: 2;
+  }
 }
 
 // .main-header__logo-image {
