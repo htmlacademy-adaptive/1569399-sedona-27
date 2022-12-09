@@ -3,6 +3,20 @@
   text-align: center;
   text-transform: uppercase;
   background-color: $color-main;
+
+  @media (min-width: $width-tablet) {
+    padding: 60px $p-l-r-tablet 40px;
+  }
+
+  @media (min-width: $width-desctop) {
+    padding: 60px $p-l-r-desctop;
+  }
+}
+
+.video__description-content {
+  @include margin-0-auto;
+
+  max-width: 520px;
 }
 
 .video__description-title {
@@ -10,6 +24,10 @@
 
   &:not(:last-child) {
     margin-bottom: 25px;
+  }
+
+  @media (min-width: $width-tablet) {
+    font-size: 21px;
   }
 }
 
@@ -21,9 +39,8 @@
   }
 }
 
-.video__player-wrapper {
-  margin-top: 40px;
-}
+// .video__player-wrapper {
+// }
 
 // .video__player-image {
 // }

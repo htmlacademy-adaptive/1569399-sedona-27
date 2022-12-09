@@ -19,7 +19,8 @@
 .page__container {
   @include margin-0-auto();
 
-  min-width: 320px;
+  width: 320px;
+  // min-width: 320px;
   // max-width: 1200px;
   min-height: 100vh;
   margin: 0 auto;
