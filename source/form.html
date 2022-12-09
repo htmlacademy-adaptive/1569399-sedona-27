@@ -37,18 +37,18 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link" href="index.html">Главная</a>
+              <a class="main-nav__link main-nav__item--column-a" href="index.html">Главная</a>
             </li>
 
             <li class="main-nav__item">
-              <a class="main-nav__link" href="catalog.html">Фото и видео</a>
+              <a class="main-nav__link main-nav__item--column-b" href="catalog.html">Фото и видео</a>
             </li>
 
-            <li class="main-nav__item">
+            <li class="main-nav__item main-nav__item--column-c">
               <a class="main-nav__link main-nav__link--active">Форма отзыва</a>
             </li>
 
-            <li class="main-nav__item">
+            <li class="main-nav__item main-nav__item--column-d">
               <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
             </li>
           </ul>
@@ -79,131 +79,131 @@
         <div class="survey__form-wrapper">
           <form class="survey__form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="survey__group-wrapper">
-            <fieldset class="survey__group">
-              <legend class="survey__title">Представьтесь:</legend>
+              <fieldset class="survey__group">
+                <legend class="survey__title">Представьтесь:</legend>
 
-              <p class="survey__input">
-                <label class="survey__input-title" for="#survey-input-name">Имя*:</label>
-                <input class="survey__input-field" id="#survey-input-name" type="text" name="survey-name"
-                  placeholder="Пётр" required>
-              </p>
+                <p class="survey__input">
+                  <label class="survey__input-title" for="#survey-input-name">Имя*:</label>
+                  <input class="survey__input-field" id="#survey-input-name" type="text" name="survey-name"
+                    placeholder="Пётр" required>
+                </p>
 
-              <p class="survey__input">
-                <label class="survey__input-title" for="#survey-input-surname">Фамилия*:</label>
-                <input class="survey__input-field" id="#survey-input-surname" type="text" name="survey-surname"
-                  placeholder="Пустота" required>
-              </p>
+                <p class="survey__input">
+                  <label class="survey__input-title" for="#survey-input-surname">Фамилия*:</label>
+                  <input class="survey__input-field" id="#survey-input-surname" type="text" name="survey-surname"
+                    placeholder="Пустота" required>
+                </p>
 
-              <p class="survey__input">
-                <label class="survey__input-title" for="#survey-input-middle-name">Отчество*:</label>
-                <input class="survey__input-field" id="#survey-input-middle-name" type="text" name="survey-middle-name"
-                  placeholder="Викторович" required>
-              </p>
-            </fieldset>
-          </div>
-
-            <div class="survey__group-wrapper">
-            <fieldset class="survey__group">
-              <legend class="survey__title">Контактная информация:</legend>
-
-              <p class="survey__input">
-                <label class="survey__input-title" for="#survey-input-tel">Контактный телефон*:</label>
-                <input class="survey__input-field survey__input-field--icon survey__input-field--icon-phone"
-                  id="#survey-input-tel" type="tel" name="survey-tel" placeholder="Введите телефон" required>
-              </p>
-
-              <p class="survey__input">
-                <label class="survey__input-title" for="#survey-input-email">Электронная почта*:</label>
-                <input class="survey__input-field survey__input-field--icon survey__input-field--icon-email"
-                  id="#survey-input-email" type="text" name="survey-email" placeholder="Введите e-mail" required>
-              </p>
-            </fieldset>
-          </div>
+                <p class="survey__input">
+                  <label class="survey__input-title" for="#survey-input-middle-name">Отчество*:</label>
+                  <input class="survey__input-field" id="#survey-input-middle-name" type="text"
+                    name="survey-middle-name" placeholder="Викторович" required>
+                </p>
+              </fieldset>
+            </div>
 
             <div class="survey__group-wrapper">
-            <fieldset class="survey__group">
-              <legend class="survey__title">Ваше общее впечатление:</legend>
-              <ul class="survey__list">
-                <li class="survey__item">
-                  <label class="survey__control">
-                    <input class="survey__control-input survey__control-input--radio visually-hidden" type="radio" name="survey-impression"
-                      value="positive" checked>
-                    <span class="survey__control-radio"></span>
-                    <span class="survey__control-label">Скорее положительное</span>
-                  </label>
-                </li>
+              <fieldset class="survey__group">
+                <legend class="survey__title">Контактная информация:</legend>
 
-                <li class="survey__item">
-                  <label class="survey__control">
-                    <input class="survey__control-input survey__control-input--radio visually-hidden" type="radio" name="survey-impression"
-                      value="negative">
-                    <span class="survey__control-radio"></span>
-                    <span class="survey__control-label">Скорее отрицательное</span>
-                  </label>
-                </li>
+                <p class="survey__input">
+                  <label class="survey__input-title" for="#survey-input-tel">Контактный телефон*:</label>
+                  <input class="survey__input-field survey__input-field--icon survey__input-field--icon-phone"
+                    id="#survey-input-tel" type="tel" name="survey-tel" placeholder="Введите телефон" required>
+                </p>
 
-                <li class="survey__item">
-                  <label class="survey__control">
-                    <input class="survey__control-input survey__control-input--radio visually-hidden" type="radio" name="survey-impression"
-                      value="neutral">
-                    <span class="survey__control-radio"></span>
-                    <span class="survey__control-label">Затрудняюсь ответить</span>
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-          </div>
+                <p class="survey__input">
+                  <label class="survey__input-title" for="#survey-input-email">Электронная почта*:</label>
+                  <input class="survey__input-field survey__input-field--icon survey__input-field--icon-email"
+                    id="#survey-input-email" type="text" name="survey-email" placeholder="Введите e-mail" required>
+                </p>
+              </fieldset>
+            </div>
 
             <div class="survey__group-wrapper">
-            <fieldset class="survey__group">
-              <legend class="survey__title">Посещенные достопримечательности:</legend>
-              <ul class="survey__list">
-                <li class="survey__item">
-                  <label class="survey__control">
-                    <input class="survey__control-input survey__control-input--mark visually-hidden" type="checkbox"
-                      name="survey-visited-devils-bridge" checked>
-                    <span class="survey__control-mark"></span>
-                    <span class="survey__control-label">Мост Дьявола</span>
-                  </label>
-                </li>
+              <fieldset class="survey__group">
+                <legend class="survey__title">Ваше общее впечатление:</legend>
+                <ul class="survey__list">
+                  <li class="survey__item">
+                    <label class="survey__control">
+                      <input class="survey__control-input survey__control-input--radio visually-hidden" type="radio"
+                        name="survey-impression" value="positive" checked>
+                      <span class="survey__control-radio"></span>
+                      <span class="survey__control-label">Скорее положительное</span>
+                    </label>
+                  </li>
 
-                <li class="survey__item">
-                  <label class="survey__control">
-                    <input class="survey__control-input survey__control-input--mark visually-hidden" type="checkbox"
-                      name="survey-visited-mount-bell" checked>
-                    <span class="survey__control-mark"></span>
-                    <span class="survey__control-label">Гора-Колокол</span>
-                  </label>
-                </li>
+                  <li class="survey__item">
+                    <label class="survey__control">
+                      <input class="survey__control-input survey__control-input--radio visually-hidden" type="radio"
+                        name="survey-impression" value="negative">
+                      <span class="survey__control-radio"></span>
+                      <span class="survey__control-label">Скорее отрицательное</span>
+                    </label>
+                  </li>
 
-                <li class="survey__item">
-                  <label class="survey__control">
-                    <input class="survey__control-input survey__control-input--mark visually-hidden" type="checkbox"
-                      name="survey-visited-slide-park" checked>
-                    <span class="survey__control-mark"></span>
-                    <span class="survey__control-label">Слайд-парк</span>
-                  </label>
-                </li>
+                  <li class="survey__item">
+                    <label class="survey__control">
+                      <input class="survey__control-input survey__control-input--radio visually-hidden" type="radio"
+                        name="survey-impression" value="neutral">
+                      <span class="survey__control-radio"></span>
+                      <span class="survey__control-label">Затрудняюсь ответить</span>
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
 
-                <li class="survey__item">
-                  <label class="survey__control">
-                    <input class="survey__control-input survey__control-input--mark visually-hidden" type="checkbox"
-                      name="survey-visited-red-rocks">
-                    <span class="survey__control-mark"></span>
-                    <span class="survey__control-label">Красные скалы</span>
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-          </div>
+            <div class="survey__group-wrapper">
+              <fieldset class="survey__group">
+                <legend class="survey__title">Посещенные достопримечательности:</legend>
+                <ul class="survey__list">
+                  <li class="survey__item">
+                    <label class="survey__control">
+                      <input class="survey__control-input survey__control-input--mark visually-hidden" type="checkbox"
+                        name="survey-visited-devils-bridge" checked>
+                      <span class="survey__control-mark"></span>
+                      <span class="survey__control-label">Мост Дьявола</span>
+                    </label>
+                  </li>
 
-          <div class="survey__group-wrapper">
-            <fieldset class="survey__group">
-              <legend class="survey__title">Опишите свои эмоции:</legend>
-              <textarea class="survey__comment" name="survey-comment"
-                placeholder="Опишите подробно все свои восторги"></textarea>
-            </fieldset>
-          </div>
+                  <li class="survey__item">
+                    <label class="survey__control">
+                      <input class="survey__control-input survey__control-input--mark visually-hidden" type="checkbox"
+                        name="survey-visited-mount-bell" checked>
+                      <span class="survey__control-mark"></span>
+                      <span class="survey__control-label">Гора-Колокол</span>
+                    </label>
+                  </li>
+
+                  <li class="survey__item">
+                    <label class="survey__control">
+                      <input class="survey__control-input survey__control-input--mark visually-hidden" type="checkbox"
+                        name="survey-visited-slide-park" checked>
+                      <span class="survey__control-mark"></span>
+                      <span class="survey__control-label">Слайд-парк</span>
+                    </label>
+                  </li>
+
+                  <li class="survey__item">
+                    <label class="survey__control">
+                      <input class="survey__control-input survey__control-input--mark visually-hidden" type="checkbox"
+                        name="survey-visited-red-rocks">
+                      <span class="survey__control-mark"></span>
+                      <span class="survey__control-label">Красные скалы</span>
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
+
+            <div class="survey__group-wrapper">
+              <fieldset class="survey__group">
+                <legend class="survey__title">Опишите свои эмоции:</legend>
+                <textarea class="survey__comment" name="survey-comment"
+                  placeholder="Опишите подробно все свои восторги"></textarea>
+              </fieldset>
+            </div>
 
             <div class="survey__button-wrapper">
               <button class="survey__button survey__button--send button" type="submit">Отправить отзыв</button>

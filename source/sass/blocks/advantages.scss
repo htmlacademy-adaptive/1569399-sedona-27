@@ -7,13 +7,42 @@
 // Описание
 .advantages__description-wrapper {
   padding: 32px $p-l-r;
+
+  @media (min-width: $width-tablet) {
+    padding: 45px $p-l-r-tablet 55px;
+  }
+
+  @media (min-width: $width-desctop) {
+    padding: 60px $p-l-r-desctop 45px;
+  }
+}
+
+.advantages__description-content {
+  @include margin-0-auto;
+
+  max-width: 520px;
 }
 
 .advantages__description-title {
   @include title;
+  font-size: 18px;
 
   &:not(:last-child) {
     margin-bottom: 25px;
+  }
+
+  @media (min-width: $width-tablet) {
+    font-size: 21px;
+  }
+
+  br {
+    display: none;
+  }
+
+  @media (max-width: $width-mobile) {
+    br {
+      display: block;
+    }
   }
 }
 
@@ -28,6 +57,12 @@
 // Преимущества - основной список
 .advantages__list {
   @include list-style-none;
+
+  display: grid;
+
+  @media (min-width: $width-tablet) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .advantages__item {
@@ -48,9 +83,20 @@
     content: none;
   }
 
+  @media (min-width: $width-tablet) {
+    &::before {
+      content: none;
+    }
+  }
+
   &--accent {
     color: $color-main;
     background-color: $color-accent;
+
+    @media (min-width: $width-tablet) {
+      grid-column-start: 1;
+      grid-column-end: -1;
+    }
 
     &::before {
       content: none;
@@ -62,21 +108,50 @@
       background-repeat: no-repeat;
       background-size: contain;
       background-position: top;
+
+      @media (min-width: $width-tablet) {
+        padding-top: 0;
+        background-image: none;
+      }
     }
   }
 }
 
 .advantages__item-wrapper {
   padding: 24px $p-l-r;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   &--accent {
     padding: 37px $p-l-r;
   }
+
+  @media (min-width: $width-tablet) {
+    min-height: 256px;
+    padding: 33px;
+
+    &--accent {
+      padding: 33px;
+    }
+  }
+
+  @media (min-width: $width-desctop) {
+    padding: 50px;
+
+    &--accent {
+      padding: 50px;
+    }
+  }
 }
 
 .advantages__item-accent-wrapper {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+
+  @media (min-width: $width-tablet) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .advantages__title {
@@ -92,6 +167,9 @@
 }
 
 .advantages__number {
+  margin: 0;
+  padding: 0;
+
   &:not(:last-child) {
     margin-bottom: 11px;
   }
@@ -105,23 +183,31 @@
   }
 }
 
-// .advantages__image {
-
-// }
+.advantages__image {
+  grid-column-start: 2;
+  grid-column-end: -1;
+}
 
 // Преимущества - внутренний список
 .advantages__sub-list {
   @include list-style-none;
 
+  display: grid;
+  gap: 25px;
   padding: 23px $p-l-r;
   text-align: left;
   color: $color-secondary-light;
   background-color: $color-main;
+
+  @media (min-width: $width-tablet) {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0;
+    gap: 0;
+  }
 }
 
 .advantages__sub-item {
   position: relative;
-  margin-bottom: 25px;
   padding-top: 8px;
   padding-left: 47px;
 
@@ -148,7 +234,41 @@
   &--souvenirs::before {
     background-image: url("../img/advantages/advantages-icon-souvenirs.svg");
   }
+
+
+  @media (min-width: $width-tablet) {
+    padding: 160px 33px 60px 33px;
+    text-align: center;
+
+    &::before {
+      content: "";
+      top: 50px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 77px;
+      height: 77px;
+    }
+  }
+
+
+  @media (min-width: $width-desctop) {
+    padding: 170px 50px 70px 50px;
+    text-align: center;
+
+    &::before {
+      content: "";
+      top: 60px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 77px;
+      height: 77px;
+    }
+  }
 }
+
+// .advantages__sub-item-wrapper {
+
+// }
 
 .advantages__sub-title {
   @include title;

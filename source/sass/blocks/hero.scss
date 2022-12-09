@@ -11,6 +11,10 @@
   background-size: contain, cover;
   background-position: bottom, center;
 
+  @media (min-width: $width-tablet) {
+    padding: 77px $p-l-r-tablet 90px;
+  }
+
   &--secondary {
     background-position: bottom, bottom;
     padding: 60px $p-l-r 67px;
