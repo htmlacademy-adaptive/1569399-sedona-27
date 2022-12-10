@@ -80,52 +80,59 @@
 
         <div class="survey__form-wrapper">
           <form class="survey__form" action="https://echo.htmlacademy.ru/" method="post">
-            <div class="survey__group-wrapper">
-              <fieldset class="survey__group">
-                <legend class="survey__title">Представьтесь:</legend>
 
-                <p class="survey__input">
-                  <label class="survey__input-title" for="#survey-input-name">Имя*:</label>
-                  <input class="survey__input-field" id="#survey-input-name" type="text" name="survey-name"
-                    placeholder="Пётр" required>
-                </p>
+            <div class="survey__columns">
+              <div class="survey__group-wrapper survey__group-wrapper--column">
+                <fieldset class="survey__group">
+                  <legend class="survey__title survey__title--column">Представьтесь:</legend>
 
-                <p class="survey__input">
-                  <label class="survey__input-title" for="#survey-input-surname">Фамилия*:</label>
-                  <input class="survey__input-field" id="#survey-input-surname" type="text" name="survey-surname"
-                    placeholder="Пустота" required>
-                </p>
+                  <div class="survey__content-wrapper survey__content-wrapper--column-left">
+                    <p class="survey__input">
+                      <label class="survey__input-title" for="#survey-input-name">Имя*:</label>
+                      <input class="survey__input-field" id="#survey-input-name" type="text" name="survey-name"
+                        placeholder="Пётр" required>
+                    </p>
 
-                <p class="survey__input">
-                  <label class="survey__input-title" for="#survey-input-middle-name">Отчество*:</label>
-                  <input class="survey__input-field" id="#survey-input-middle-name" type="text"
-                    name="survey-middle-name" placeholder="Викторович" required>
-                </p>
-              </fieldset>
+                    <p class="survey__input">
+                      <label class="survey__input-title" for="#survey-input-surname">Фамилия*:</label>
+                      <input class="survey__input-field" id="#survey-input-surname" type="text" name="survey-surname"
+                        placeholder="Пустота" required>
+                    </p>
+
+                    <p class="survey__input">
+                      <label class="survey__input-title" for="#survey-input-middle-name">Отчество*:</label>
+                      <input class="survey__input-field" id="#survey-input-middle-name" type="text"
+                        name="survey-middle-name" placeholder="Викторович" required>
+                    </p>
+                </div>
+                </fieldset>
+              </div>
+
+              <div class="survey__group-wrapper survey__group-wrapper--column">
+                <fieldset class="survey__group">
+                  <legend class="survey__title survey__title--column">Контактная информация:</legend>
+
+                  <div class="survey__content-wrapper survey__content-wrapper--column-right">
+                    <p class="survey__input">
+                      <label class="survey__input-title" for="#survey-input-tel">Контактный телефон*:</label>
+                      <input class="survey__input-field survey__input-field--icon survey__input-field--icon-phone"
+                        id="#survey-input-tel" type="tel" name="survey-tel" placeholder="Введите телефон" required>
+                    </p>
+
+                    <p class="survey__input">
+                      <label class="survey__input-title" for="#survey-input-email">Электронная почта*:</label>
+                      <input class="survey__input-field survey__input-field--icon survey__input-field--icon-email"
+                        id="#survey-input-email" type="text" name="survey-email" placeholder="Введите e-mail" required>
+                    </p>
+                </div>
+                </fieldset>
+              </div>
             </div>
 
             <div class="survey__group-wrapper">
               <fieldset class="survey__group">
-                <legend class="survey__title">Контактная информация:</legend>
-
-                <p class="survey__input">
-                  <label class="survey__input-title" for="#survey-input-tel">Контактный телефон*:</label>
-                  <input class="survey__input-field survey__input-field--icon survey__input-field--icon-phone"
-                    id="#survey-input-tel" type="tel" name="survey-tel" placeholder="Введите телефон" required>
-                </p>
-
-                <p class="survey__input">
-                  <label class="survey__input-title" for="#survey-input-email">Электронная почта*:</label>
-                  <input class="survey__input-field survey__input-field--icon survey__input-field--icon-email"
-                    id="#survey-input-email" type="text" name="survey-email" placeholder="Введите e-mail" required>
-                </p>
-              </fieldset>
-            </div>
-
-            <div class="survey__group-wrapper">
-              <fieldset class="survey__group">
-                <legend class="survey__title">Ваше общее впечатление:</legend>
-                <ul class="survey__list">
+                <legend class="survey__title survey__title--accent">Ваше общее впечатление:</legend>
+                <ul class="survey__list survey__list--radio">
                   <li class="survey__item">
                     <label class="survey__control">
                       <input class="survey__control-input survey__control-input--radio visually-hidden" type="radio"
@@ -158,8 +165,8 @@
 
             <div class="survey__group-wrapper">
               <fieldset class="survey__group">
-                <legend class="survey__title">Посещенные достопримечательности:</legend>
-                <ul class="survey__list">
+                <legend class="survey__title survey__title--accent">Посещенные <br>достопримечательности:</legend>
+                <ul class="survey__list survey__list--mark">
                   <li class="survey__item">
                     <label class="survey__control">
                       <input class="survey__control-input survey__control-input--mark visually-hidden" type="checkbox"
@@ -281,10 +288,10 @@
   </div>
 
   <div class="modal-container modal-container--open-error">
-    <div class="modal">
+    <div class="modal modal--error">
       <section class="modal__content">
-        <div class="modal__content-wrapper">
-          <h2 class="modal__title">Что-то пошло не так!</h2>
+        <div class="modal__content-wrapper modal__content-wrapper--error">
+          <h2 class="modal__title">Что-то пошло <br>не так!</h2>
           <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их
             заполнить</p>
 
@@ -295,9 +302,9 @@
   </div>
 
   <div class="modal-container modal-container--open-success">
-    <div class="modal">
+    <div class="modal modal--success">
       <section class="modal__content">
-        <div class="modal__content-wrapper">
+        <div class="modal__content-wrapper modal__content-wrapper--success">
           <h2 class="modal__title">Ваш отзыв отправлен!</h2>
           <p class="modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее
             время мы опубликуем
