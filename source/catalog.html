@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -35,19 +36,19 @@
 
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
-            <li class="main-nav__item">
+            <li class="main-nav__item main-nav__item--column-a">
               <a class="main-nav__link" href="index.html">Главная</a>
             </li>
 
-            <li class="main-nav__item">
+            <li class="main-nav__item main-nav__item--column-b">
               <a class="main-nav__link main-nav__link--active">Фото и видео</a>
             </li>
 
-            <li class="main-nav__item">
+            <li class="main-nav__item main-nav__item--column-c">
               <a class="main-nav__link" href="form.html">Форма отзыва</a>
             </li>
 
-            <li class="main-nav__item">
+            <li class="main-nav__item main-nav__item--column-d">
               <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
             </li>
           </ul>
@@ -66,18 +67,20 @@
       </section>
 
       <section class="catalog">
-        <div class="catalog__description-wrapper description">
-          <h2 class="catalog__description-title description__title">Фото и видео
-          </h2>
-          <p class="catalog__description-text description__text">Не можете решиться на путешествие из-за курса?
-            Фотографии
-            помогут вам забыть о политике и экономике.
-          </p>
+        <div class="catalog__description-wrapper">
+          <div class="catalog__description-content">
+            <h2 class="catalog__description-title">Фото и видео
+            </h2>
+            <p class="catalog__description-text">Не можете решиться на путешествие из-за курса?
+              Фотографии
+              помогут вам забыть о политике и экономике.
+            </p>
+          </div>
         </div>
 
         <div class="catalog__product-list-wrapper">
           <ul class="catalog__product-list">
-            <li class="catalog__product-item">
+            <li class="catalog__product-item catalog__product-item--accent">
               <a class="catalog__product-link-image" href="#"><img class="catalog__product-image"
                   src="img/catalog/catalog-photo-1@1.jpg" width="280" height="280"
                   alt="Дорога в сухой пустыне при восходе солнца."></a>
@@ -201,11 +204,13 @@
       </section>
 
       <section class="video">
+        <div class="video__description-content">
           <h2 class="video__description-title">Все еще сомневаетесь?
           </h2>
           <p class="video__description-text">Смотрите видеопрезентацию и скорее за билетами, пока они
             не подорожали в очередной раз!
           </p>
+        </div>
 
         <div class="video__player-wrapper video-player">
           <img class="video__player-image video-player__image" src="img/video/video-photo-1@1.jpg" width="280"
@@ -213,8 +218,8 @@
           <button class="video__player-button video-player__button" type="button">
             <span class="visually-hidden">Воспроизвести видео</span>
 
-            <svg class="video__player-icon video-player__icon" aria-hidden="true" focusable="false" width="48" height="54"
-              viewBox="0 0 48 54"  xmlns="http://www.w3.org/2000/svg">
+            <svg class="video__player-icon video-player__icon" aria-hidden="true" focusable="false" width="48"
+              height="54" viewBox="0 0 48 54" xmlns="http://www.w3.org/2000/svg">
               <path d="M48 27L0 54L2.42273e-06 0L48 27Z" />
             </svg></button>
         </div>

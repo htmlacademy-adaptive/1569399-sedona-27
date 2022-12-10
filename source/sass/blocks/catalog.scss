@@ -7,6 +7,20 @@
 // Описание
 .catalog__description-wrapper {
   padding: 36px $p-l-r 28px;
+
+  @media (min-width: $width-tablet) {
+    padding: 45px $p-l-r-tablet 75px;
+  }
+
+  @media (min-width: $width-desctop) {
+    padding: 60px $p-l-r-desctop 85px;
+  }
+}
+
+.catalog__description-content {
+  @include margin-0-auto;
+
+  max-width: 520px;
 }
 
 .catalog__description-title {
@@ -14,6 +28,10 @@
 
   &:not(:last-child) {
     margin-bottom: 25px;
+  }
+
+  @media (min-width: $width-tablet) {
+    font-size: 30px;
   }
 }
 
@@ -26,8 +44,15 @@
 }
 
 // Галерея
-// .catalog__product-list-wrapper {
-// }
+.catalog__product-list-wrapper {
+  @media (min-width: $width-tablet) {
+    padding: 0 $p-l-r-tablet;
+  }
+
+  @media (min-width: $width-desctop) {
+    padding: 0;
+  }
+}
 
 .catalog__product-list {
   @include list-style-none;
@@ -35,14 +60,41 @@
 
   text-align: left;
   text-transform: none;
+
+  display: grid;
+
+  @media (min-width: $width-tablet) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $width-desctop) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .catalog__product-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
   padding: 24px $p-l-r;
   border-top: 1px solid $color-surface-dark;
 
   &:last-child {
     border-bottom: 1px solid $color-surface-dark;
+  }
+
+  @media (min-width: $width-tablet) {
+    padding: 0;
+    border-top: none;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    &--accent {
+      grid-column-start: 1;
+      grid-column-end: -1;
+    }
   }
 }
 
@@ -55,20 +107,78 @@
   line-height: 23px;
   text-decoration: none;
   color: $color-secondary;
+  overflow: hidden;
+
+  @media (min-width: $width-tablet) {
+    margin-bottom: 0;
+  }
 }
 
 .catalog__product-image {
   display: block;
+  width: 100%;
   height: 280px;
-  object-fit: contain;
   background-color: $color-surface-lighten;
+  object-fit: cover;
+  transition-property: transform;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.3s;
+
+  @media (min-width: $width-tablet) {
+    height: 267px;
+  }
 }
 
-// .catalog__product-description {
-// }
+.catalog__product-item:hover .catalog__product-image {
+  transform: scale(1.1);
+}
+
+.catalog__product-link-image:focus .catalog__product-image {
+  transform: scale(1.1);
+}
+
+.catalog__product-item--accent .catalog__product-image {
+  @media (min-width: $width-tablet) {
+    height: 480px;
+  }
+}
+
+.catalog__product-description {
+  flex-grow: 1;
+  transition-property: background-color;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.3s;
+
+  @media (min-width: $width-tablet) {
+    display: flex;
+    justify-content: space-between;
+    min-height: 80px;
+    padding: 22px 20px 15px;
+    background-color: $color-surface;
+  }
+
+  @media (min-width: $width-desctop) {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: $color-main;
+    background-color: $color-secondary-03;
+  }
+}
+
+.catalog__product-item:hover .catalog__product-description {
+  @media (min-width: $width-desctop) {
+    background-color: $color-secondary-05;
+  }
+}
 
 .catalog__product-wrapper {
   margin-bottom: 11px;
+  flex-grow: 1;
+
+  @media (min-width: $width-tablet) {
+    margin-bottom: 0;
+  }
 }
 
 .catalog__product-link {
@@ -93,6 +203,15 @@
   &:active {
     color: $color-surface-lightest;
   }
+
+  @media (min-width: $width-tablet) {
+    margin-right: 30px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $width-desctop) {
+    color: $color-main;
+  }
 }
 
 .catalog__product-title {
@@ -115,6 +234,7 @@
 .catalog__product-like-link {
   display: flex;
   align-items: baseline;
+  max-width: 100px;
 
   font-weight: 700;
   font-size: 14px;
@@ -134,11 +254,26 @@
   &:active {
     color: $color-surface-lightest;
   }
+
+  @media (min-width: $width-tablet) {
+    padding: 6px;
+    padding-right: 0;
+    justify-content: end;
+    align-self: flex-start;
+  }
+
+  @media (min-width: $width-desctop) {
+    color: $color-main;
+  }
 }
 
 .catalog__product-like-image {
   margin-right: 14px;
   fill: $color-secondary-03;
+
+  @media (min-width: $width-desctop) {
+    fill: $color-main;
+  }
 }
 
 .catalog__product-like-link:hover .catalog__product-like-image {

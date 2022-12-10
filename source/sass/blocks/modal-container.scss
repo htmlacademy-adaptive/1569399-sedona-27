@@ -21,7 +21,15 @@
 .modal {
   position: relative;
   margin: auto;
-  width: 320px;
+  min-width: 320px;
+
+  &--error {
+    max-width: 400px;
+  }
+
+  &--success {
+    max-width: 640px;
+  }
 }
 
 .modal__content {
@@ -31,7 +39,13 @@
 }
 
 .modal__content-wrapper {
-  padding: 45px $p-l-r 35px;
+  padding: 45px 40px 35px;
+
+  &--success {
+    @media (min-width: $width-tablet) {
+      padding: 53px 90px 30px;
+    }
+  }
 }
 
 .modal__title {
@@ -39,6 +53,18 @@
 
   &:not(:last-child) {
     margin-bottom: 25px;
+  }
+
+  @media (min-width: $width-tablet) {
+    font-size: 30px;
+  }
+
+  br {
+    display: none;
+
+    @media (min-width: $width-tablet) {
+      display: block;
+    }
   }
 }
 
@@ -53,6 +79,10 @@
 .modal__button-wrapper {
   padding: 20px $p-l-r;
   background-color: $color-surface;
+
+  @media (min-width: $width-tablet) {
+    padding: 44px 90px;
+  }
 }
 
 .modal__button {
@@ -66,5 +96,6 @@
 
   &--close {
     width: 100%;
+    max-width: 460px;
   }
 }

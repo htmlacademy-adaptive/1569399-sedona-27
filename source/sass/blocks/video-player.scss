@@ -1,14 +1,32 @@
+.video__player-wrapper {
+  @include margin-0-auto;
+
+  margin-top: 40px;
+}
+
 .video-player {
   position: relative;
   width: 280px;
   height: 177px;
   cursor: pointer;
+  background-color: $color-surface-lighten;
+
+  @media (min-width: $width-tablet) {
+    width: 648px;
+    height: 500px;
+  }
+
+  @media (min-width: $width-desctop) {
+    width: 800px;
+    height: 500px;
+  }
 }
 
 .video-player__image {
   display: block;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  background-color: $color-surface-lighten;
 }
 
 .video-player__button {

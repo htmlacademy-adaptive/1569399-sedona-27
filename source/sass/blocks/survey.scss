@@ -7,6 +7,20 @@
   padding: 36px $p-l-r 28px;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $width-tablet) {
+    padding: 64px $p-l-r-tablet 102px;
+  }
+
+  @media (min-width: $width-desctop) {
+    padding: 115px $p-l-r-desctop 67px;
+  }
+}
+
+.survey__description-content {
+  @include margin-0-auto;
+
+  max-width: 520px;
 }
 
 .survey__description-title {
@@ -14,6 +28,10 @@
 
   &:not(:last-child) {
     margin-bottom: 25px;
+  }
+
+  @media (min-width: $width-tablet) {
+    font-size: 30px;
   }
 }
 
@@ -26,11 +44,47 @@
 }
 
 // Форма опроса
-// .survey__form-wrapper {
-// }
+.survey__form-wrapper {
+  @media (min-width: $width-tablet) {
+    padding: 24px $p-l-r-tablet;
+  }
+
+  @media (min-width: $width-desctop) {
+    padding: 24px $p-l-r-desctop;
+  }
+}
 
 // .survey__form {
 // }
+
+.survey__columns {
+  position: relative;
+  display: grid;
+
+  @media (min-width: $width-tablet) {
+    row-gap: 44px;
+    margin-bottom: 48px;
+    padding-bottom: 15px;
+  }
+
+  &::before {
+    @media (min-width: $width-tablet) {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      display: block;
+      width: 1px;
+      height: 100%;
+      background-color: $color-surface-border-lighten;
+    }
+  }
+
+  @media (min-width: $width-tablet) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
 .survey__group-wrapper {
   padding: 24px $p-l-r;
@@ -38,6 +92,23 @@
 
   &:last-child {
     border-bottom: 1px solid $color-surface-dark;
+
+    @media (min-width: $width-tablet) {
+      border: none;
+    }
+  }
+
+  @media (min-width: $width-tablet) {
+    margin-bottom: 48px;
+    padding: 0;
+
+    border: none;
+  }
+
+  &--column {
+    @media (min-width: $width-tablet) {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -54,6 +125,38 @@
 
   &:not(:last-child) {
     margin-bottom: 20px;
+  }
+
+  @media (min-width: $width-tablet) {
+    font-size: 21px;
+  }
+
+  &--column {
+    @media (min-width: $width-tablet) {
+      padding: 0 15px;
+    }
+  }
+}
+
+.survey__content-wrapper {
+  &--column-left {
+    @media (min-width: $width-tablet) {
+      padding-right: 44px;
+    }
+
+    @media (min-width: $width-desctop) {
+      padding-right: 64px;
+    }
+  }
+
+  &--column-right {
+    @media (min-width: $width-tablet) {
+      padding-left: 44px;
+    }
+
+    @media (min-width: $width-desctop) {
+      padding-left: 64px;
+    }
   }
 }
 
@@ -117,6 +220,38 @@
 
 .survey__list {
   @include list-style-none;
+
+  &--radio {
+    display: grid;
+
+    @media (min-width: $width-tablet) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      padding: 0 36px;
+    }
+
+    @media (min-width: $width-desctop) {
+      grid-template-columns: repeat(3, minmax(240px, auto));
+      gap: 28px;
+      padding: 17px 53px;
+    }
+  }
+
+  &--mark {
+    display: grid;
+
+    @media (min-width: $width-tablet) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px 32px;
+      padding: 0 84px;
+    }
+
+    @media (min-width: $width-desctop) {
+      grid-template-columns: repeat(4, minmax(150px, auto));
+      gap: 16px 64px;
+      padding: 45px 31px;
+    }
+  }
 }
 
 .survey__item {
@@ -248,10 +383,26 @@
     border: 4px solid $color-surface-dark;
     background-color: $color-main;
   }
+
+  @media (min-width: $width-tablet) {
+    @include margin-0-auto;
+
+    max-width: 768px;
+  }
 }
 
 .survey__button-wrapper {
   padding: 24px $p-l-r;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $width-tablet) {
+    @include margin-0-auto;
+    max-width: 768px;
+    padding: 0;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .survey__button {
@@ -260,6 +411,12 @@
   display: block;
   width: 100%;
   outline: none;
+
+  @media (min-width: $width-tablet) {
+    margin: 0;
+    margin-right: 25px;
+    max-width: 50%;
+  }
 }
 
 // .survey__button--send {

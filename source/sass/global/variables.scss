@@ -1,4 +1,4 @@
-
+// Colors
 $color-surface-lightest: #b3b3b3;
 $color-surface-lighten: #eeeeee;
 $color-surface-light: #eaeaea;
@@ -6,6 +6,8 @@ $color-surface: #f2f2f2;
 $color-surface-dark: #e5e5e5;
 $color-surface-darken: #e6e6e6;
 
+
+$color-surface-border-lighten: #dbdbdb;
 $color-surface-border-light: #d5d5d5;
 $color-surface-border: #d6d6d6;
 $color-surface-border-dark: #010101;
@@ -20,6 +22,7 @@ $color-main-02: rgba($color-main, 0.2);
 $color-secondary-light: #333333;
 $color-secondary-light-03: rgba($color-secondary-light, 0.3);
 $color-secondary: #000000;
+$color-secondary-05: rgba($color-secondary, 0.5);
 $color-secondary-03: rgba($color-secondary, 0.3);
 $color-secondary-02: rgba($color-secondary, 0.2);
 $color-secondary-0: rgba($color-secondary, 0);
@@ -35,4 +38,20 @@ $color-accent-secondary: #766357;
 $color-shadow: #000101;
 $color-shadow-02: rgba($color-shadow, 0.2);
 
+// Ширины устройств
+$width-mobile: 320px;
+
+$width-tablet: 768px;
+
+$width-desctop: 1200px;
+
+// Внутренние отступы слева и справа для контейнера
 $p-l-r: 20px;
+
+$p-l-r-tablet: 60px;
+
+$p-l-r-desctop: 120px;
+
+@media (min-width: $width-tablet) {
+  $p-l-r: 60px;
+}

@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -35,19 +36,19 @@
 
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
-            <li class="main-nav__item">
+            <li class="main-nav__item main-nav__item--column-a">
               <a class="main-nav__link main-nav__link--active">Главная</a>
             </li>
 
-            <li class="main-nav__item">
+            <li class="main-nav__item main-nav__item--column-b">
               <a class="main-nav__link" href="catalog.html">Фото и видео</a>
             </li>
 
-            <li class="main-nav__item">
+            <li class="main-nav__item main-nav__item--column-c">
               <a class="main-nav__link" href="form.html">Форма отзыва</a>
             </li>
 
-            <li class="main-nav__item">
+            <li class="main-nav__item main-nav__item--column-d">
               <a class="main-nav__link main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
             </li>
           </ul>
@@ -68,11 +69,13 @@
 
       <section class="advantages">
         <div class="advantages__description-wrapper description">
-          <h2 class="visually-hidden">Преимущества.</h2>
-          <p class="advantages__description-title description__title">Седона — небольшой городок в Аризоне,
-            заслуживающий большего!</p>
-          <p class="advantages__description-text description__text">Рассмотрим 5 причин, по которым Седона круче, чем
-            гранд каньон!</p>
+          <div class="advantages__description-content">
+            <h2 class="visually-hidden">Преимущества.</h2>
+            <p class="advantages__description-title description__title">Седона — небольшой <br>городок в Аризоне,<br>
+              заслуживающий большего!</p>
+            <p class="advantages__description-text description__text">Рассмотрим 5 причин, по которым Седона круче, чем
+              гранд каньон!</p>
+          </div>
         </div>
 
         <ul class="advantages__list">
@@ -89,26 +92,26 @@
             </div>
 
             <ul class="advantages__sub-list">
-              <div class="advantages__sub-item-wrapper">
               <li class="advantages__sub-item advantages__sub-item--house">
-                <h4 class="advantages__sub-title">Жилье</h4>
-                <p class="advantages__sub-text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                <div class="advantages__sub-item-wrapper">
+                  <h4 class="advantages__sub-title">Жилье</h4>
+                  <p class="advantages__sub-text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                </div>
               </li>
-              </div>
 
-              <div class="advantages__sub-item-wrapper">
               <li class="advantages__sub-item advantages__sub-item--food">
-                <h4 class="advantages__sub-title">Еда</h4>
-                <p class="advantages__sub-text">Всегда заказывайте Фирменный бургер, Вы не разочаруетесь!</p>
+                <div class="advantages__sub-item-wrapper">
+                  <h4 class="advantages__sub-title">Еда</h4>
+                  <p class="advantages__sub-text">Всегда заказывайте Фирменный бургер, Вы не разочаруетесь!</p>
+                </div>
               </li>
-            </div>
 
-              <div class="advantages__sub-item-wrapper">
               <li class="advantages__sub-item advantages__sub-item--souvenirs">
-                <h4 class="advantages__sub-title">Сувениры</h4>
-                <p class="advantages__sub-text">Не только китайского, но и местного производства!</p>
+                <div class="advantages__sub-item-wrapper">
+                  <h4 class="advantages__sub-title">Сувениры</h4>
+                  <p class="advantages__sub-text">Не только китайского, но и местного производства!</p>
+                </div>
               </li>
-            </div>
             </ul>
           </li>
 
@@ -145,8 +148,7 @@
             <div class="advantages__item-wrapper">
               <h3 class="advantages__title">Мало туристов</h3>
               <p class="advantages__number">— №5 —</p>
-              <p class="advantages__text">Укажите предполагаемые датыпоездки, и мы покажем вам лучшиепредложения
-                гостиниц в седоне</p>
+              <p class="advantages__text">Большинство едет в гранд каньон и толпится там</p>
             </div>
           </li>
         </ul>
