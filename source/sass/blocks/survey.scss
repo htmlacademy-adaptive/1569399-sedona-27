@@ -90,14 +90,6 @@
   padding: 24px $p-l-r;
   border-top: 1px solid $color-surface-dark;
 
-  &:last-child {
-    border-bottom: 1px solid $color-surface-dark;
-
-    @media (min-width: $width-tablet) {
-      border: none;
-    }
-  }
-
   @media (min-width: $width-tablet) {
     margin-bottom: 48px;
     padding: 0;
@@ -125,10 +117,31 @@
 
   &:not(:last-child) {
     margin-bottom: 20px;
+
+    @media (min-width: $width-tablet) {
+      margin-bottom: 28px;
+    }
   }
 
   @media (min-width: $width-tablet) {
+    margin-bottom: 28px;
     font-size: 21px;
+
+    &--accent {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 360px 1fr;
+      gap: 30px;
+      align-items: center;
+
+      &::before,
+      &::after {
+        content: "";
+        width: 100%;
+        height: 1px;
+        background-color: $color-surface-border-lighten;
+      }
+    }
   }
 
   &--column {
@@ -170,15 +183,46 @@
   @include text;
 
   display: block;
+  cursor: text;
 
   &:not(:last-child) {
     margin-left: 15px;
+  }
+
+  &--icon {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: -58px;
+      width: 58px;
+      height: 58px;
+      background-color: $color-surface-darken;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 18px 18px;
+      padding: 20px;
+    }
+  }
+
+  &--icon-phone {
+    &::before {
+      background-image: url("../img/icon/icon-phone.svg");
+    }
+  }
+
+  &--icon-email {
+    &::before {
+      background-image: url("../img/icon/icon-email.svg");
+    }
   }
 }
 
 .survey__input-field {
   width: 100%;
-  padding: 16px;
+  padding: 12px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -188,7 +232,6 @@
   outline: none;
   border: 4px solid transparent;
   background-color: $color-surface;
-
 
   &::placeholder {
     color: $color-secondary-03;
@@ -207,16 +250,11 @@
     border: 4px solid $color-surface-dark;
     background-color: $color-main;
   }
+
+  &--icon {
+    width: calc(100% - 54px);
+  }
 }
-
-// .survey__input-field--icon {
-// }
-
-// .survey__input-field--icon-phone {
-// }
-
-// .survey__input-field--icon-email {
-// }
 
 .survey__list {
   @include list-style-none;
