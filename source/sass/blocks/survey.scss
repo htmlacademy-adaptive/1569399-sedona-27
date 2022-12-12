@@ -113,6 +113,7 @@
   @include margin-padding-0;
   @include title;
 
+  width: 100%;
   text-align: center;
 
   &:not(:last-child) {
@@ -308,7 +309,7 @@
 }
 
 .survey__control-input {
-  position: relative;
+  // position: relative;
 }
 
 // Radio control
