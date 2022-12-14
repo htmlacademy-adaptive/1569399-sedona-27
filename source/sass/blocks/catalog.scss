@@ -167,6 +167,10 @@
 }
 
 .catalog__product-item:hover .catalog__product-description {
+  @media (min-width: $width-tablet) {
+    background-color: $color-surface-light;
+  }
+
   @media (min-width: $width-desctop) {
     background-color: $color-secondary-05;
   }

@@ -6,6 +6,43 @@
   background-color: $color-main;
 }
 
+@media (max-width: $width-mobile-only) {
+  .main-nav--closed .main-nav__wrapper {
+    display: none;
+  }
+
+  .main-nav--closed .main-nav__image--burger {
+    display: block;
+  }
+
+  .main-nav--closed .main-nav__image--cross {
+    display: none;
+  }
+
+  .main-nav--opened .main-nav__wrapper {
+    position: absolute;
+    display: block;
+    width: 100%;
+  }
+
+  .main-nav--opened .main-nav__image--burger {
+    display: none;
+  }
+
+  .main-nav--opened .main-nav__image--cross {
+    display: block;
+  }
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
+.main-nav--nojs .main-nav__wrapper {
+  position: static;
+  display: block;
+}
+
 // Button Burger
 .main-nav__toggle {
   position: absolute;
@@ -13,7 +50,7 @@
   right: 0;
   padding: 0;
   width: 64px;
-  height: 55px;
+  height: 56px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,10 +77,6 @@
 
   &:active {
     fill: $color-accent-03;
-  }
-
-  &--burger {
-    display: none;
   }
 
   &--cross {
