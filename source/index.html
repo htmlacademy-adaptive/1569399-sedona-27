@@ -5,6 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/favicon-icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -12,7 +16,7 @@
   <div class="page__container">
     <header class="main-header">
       <a class="main-header__logo logo logo--outer">
-        <img class="main-header__logo-image logo-image" src="img/logo/sedona-logo.svg" width="185" height="96"
+        <img class="main-header__logo-image logo__image" src="img/logo/sedona-logo.svg" width="185" height="96"
           alt="Логотип сайта города «Седона» с изображнием гор.">
       </a>
 
@@ -87,8 +91,12 @@
                 <p class="advantages__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
               </div>
 
-              <img class="advantages__image" src="img/advantages/advantages-photo-1@1.jpg" width="320" height="260"
-                alt="Отель «Open Bange» в городе «Седона».">
+              <picture class="advantages__picture">
+                <source media="(min-width: 1200px)" srcset="img/advantages/advantages-photo-1-desctop@1.jpg 1x, img/advantages/advantages-photo-1-desctop@1.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/advantages/advantages-photo-1-tablet@1.jpg 1x, img/advantages/advantages-photo-1-tablet@2.jpg 2x">
+                <img class="advantages__image" src="img/advantages/advantages-photo-1@1.jpg" srcset="img/advantages/advantages-photo-1@2.jpg 2x" width="320" height="260"
+                  alt="Отель «Open Bange» в городе «Седона».">
+              </picture>
             </div>
 
             <ul class="advantages__sub-list">
@@ -123,8 +131,12 @@
                 <p class="advantages__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
               </div>
 
-              <img class="advantages__image" src="img/advantages/advantages-photo-2@1.jpg" width="320" height="260"
-                alt="«Мост дьявола» недалеко от города «Седона».">
+              <picture class="advantages__picture">
+                <source media="(min-width: 1200px)" srcset="img/advantages/advantages-photo-2-desctop@1.jpg 1x, img/advantages/advantages-photo-2-desctop@2.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/advantages/advantages-photo-2-tablet@1.jpg 1x, img/advantages/advantages-photo-2-tablet@2.jpg 2x">
+                <img class="advantages__image" src="img/advantages/advantages-photo-2@1.jpg" srcset="img/advantages/advantages-photo-2@2.jpg 2x" width="320" height="260"
+                  alt="«Мост дьявола» недалеко от города «Седона».">
+              </picture>
             </div>
           </li>
 
