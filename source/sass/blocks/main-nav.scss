@@ -113,6 +113,8 @@
 .main-nav__list {
   @include list-style-none;
 
+  position: relative;
+
   &::before {
     content: "";
     position: absolute;
@@ -127,11 +129,20 @@
 
   @media (min-width: $width-tablet) {
     display: grid;
-    grid-template-areas: "a b . c d";
+    // grid-template-areas: "a b . c d";
     grid-template-columns: repeat(5, 1fr);
 
     &::before {
       display: none;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      grid-column-start: 3;
+      grid-row-start: 1;
+      grid-row-end: 100 span;
+      // Почему-то не работает grid-row-end со значением -1
     }
   }
 }
@@ -151,21 +162,21 @@
     box-shadow: inset 0 1px 0 $color-surface-border-dark-02, inset 0 2px 0 $color-main-02;
   }
 
-  &--column-a {
-    grid-area: a;
-  }
+  // &--column-a {
+  //   grid-area: a;
+  // }
 
-  &--column-b {
-    grid-area: b;
-  }
+  // &--column-b {
+  //   grid-area: b;
+  // }
 
-  &--column-c {
-    grid-area: c;
-  }
+  // &--column-c {
+  //   grid-area: c;
+  // }
 
-  &--column-d {
-    grid-area: d;
-  }
+  // &--column-d {
+  //   grid-area: d;
+  // }
 
   @media (min-width: $width-tablet) {
     &:not(:last-child)::before {
