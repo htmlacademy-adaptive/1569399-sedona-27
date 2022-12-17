@@ -20,7 +20,7 @@
           alt="Логотип сайта города «Седона» с изображнием гор.">
       </a>
 
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
 
@@ -118,14 +118,14 @@
 
                   <div class="survey__content-wrapper survey__content-wrapper--column-right">
                     <p class="survey__input">
-                      <label class="survey__input-title" for="#survey-input-tel">Контактный телефон*:</label>
-                      <input class="survey__input-field survey__input-field--icon survey__input-field--icon-phone"
+                      <label class="survey__input-title survey__input-title--icon survey__input-title--icon-phone" for="#survey-input-tel">Контактный телефон*:</label>
+                      <input class="survey__input-field survey__input-field--icon"
                         id="#survey-input-tel" type="tel" name="survey-tel" placeholder="Введите телефон" required>
                     </p>
 
                     <p class="survey__input">
-                      <label class="survey__input-title" for="#survey-input-email">Электронная почта*:</label>
-                      <input class="survey__input-field survey__input-field--icon survey__input-field--icon-email"
+                      <label class="survey__input-title survey__input-title--icon survey__input-title--icon-email" for="#survey-input-email">Электронная почта*:</label>
+                      <input class="survey__input-field survey__input-field--icon"
                         id="#survey-input-email" type="text" name="survey-email" placeholder="Введите e-mail" required>
                     </p>
                 </div>
@@ -212,7 +212,7 @@
 
             <div class="survey__group-wrapper">
               <fieldset class="survey__group">
-                <legend class="survey__title">Опишите свои эмоции:</legend>
+                <legend class="survey__title survey__title--accent">Опишите свои эмоции:</legend>
                 <textarea class="survey__comment" name="survey-comment"
                   placeholder="Опишите подробно все свои восторги"></textarea>
               </fieldset>
@@ -321,6 +321,8 @@
       </section>
     </div>
   </div>
+
+  <script src="js/script.js"></script>
 </body>
 
 </html>

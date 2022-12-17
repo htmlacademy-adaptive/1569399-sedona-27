@@ -41,6 +41,8 @@ $color-shadow-02: rgba($color-shadow, 0.2);
 // Ширины устройств
 $width-mobile: 320px;
 
+$width-mobile-only: 767px;
+
 $width-tablet: 768px;
 
 $width-desctop: 1200px;
@@ -51,7 +53,3 @@ $p-l-r: 20px;
 $p-l-r-tablet: 60px;
 
 $p-l-r-desctop: 120px;
-
-@media (min-width: $width-tablet) {
-  $p-l-r: 60px;
-}
