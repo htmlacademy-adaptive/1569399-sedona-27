@@ -64,11 +64,11 @@
       <h1 class="visually-hidden">Туристический сайт города «Седона».</h1>
 
       <section class="hero">
-        <div class="hero__wrapper">
-          <h2 class="visually-hidden">Добро пожаловать.</h2>
-          <img class="hero__image" src="img/logo/hero-logo.svg" width="282" height="214"
-            alt="Welcome to gorgeous Sedona. Because the Grand Canyon sucks!">
-        </div>
+        <!-- <div class="hero__wrapper"> -->
+        <h2 class="visually-hidden">Добро пожаловать.</h2>
+        <img class="hero__image" src="img/logo/hero-logo.svg" width="282" height="214"
+          alt="Welcome to gorgeous Sedona. Because the Grand Canyon sucks!">
+        <!-- </div> -->
       </section>
 
       <section class="advantages">
@@ -92,9 +92,12 @@
               </div>
 
               <picture class="advantages__picture">
-                <source media="(min-width: 1200px)" srcset="img/advantages/advantages-photo-1-desctop@1.jpg 1x, img/advantages/advantages-photo-1-desctop@1.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/advantages/advantages-photo-1-tablet@1.jpg 1x, img/advantages/advantages-photo-1-tablet@2.jpg 2x">
-                <img class="advantages__image" src="img/advantages/advantages-photo-1@1.jpg" srcset="img/advantages/advantages-photo-1@2.jpg 2x" width="320" height="260"
+                <source media="(min-width: 769px)"
+                  srcset="img/advantages/advantages-photo-1-desctop@1x.jpg 1x, img/advantages/advantages-photo-1-desctop@2x.jpg 2x">
+                <source media="(min-width: 321px)"
+                  srcset="img/advantages/advantages-photo-1-tablet@1x.jpg 1x, img/advantages/advantages-photo-1-tablet@2x.jpg 2x">
+                <img class="advantages__image" src="img/advantages/advantages-photo-1@1x.jpg"
+                  srcset="img/advantages/advantages-photo-1@2x.jpg 2x" width="320" height="260"
                   alt="Отель «Open Bange» в городе «Седона».">
               </picture>
             </div>
@@ -132,9 +135,12 @@
               </div>
 
               <picture class="advantages__picture">
-                <source media="(min-width: 1200px)" srcset="img/advantages/advantages-photo-2-desctop@1.jpg 1x, img/advantages/advantages-photo-2-desctop@2.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/advantages/advantages-photo-2-tablet@1.jpg 1x, img/advantages/advantages-photo-2-tablet@2.jpg 2x">
-                <img class="advantages__image" src="img/advantages/advantages-photo-2@1.jpg" srcset="img/advantages/advantages-photo-2@2.jpg 2x" width="320" height="260"
+                <source media="(min-width: 769px)"
+                  srcset="img/advantages/advantages-photo-2-desctop@1x.jpg 1x, img/advantages/advantages-photo-2-desctop@2x.jpg 2x">
+                <source media="(min-width: 321px)"
+                  srcset="img/advantages/advantages-photo-2-tablet@1x.jpg 1x, img/advantages/advantages-photo-2-tablet@2x.jpg 2x">
+                <img class="advantages__image" src="img/advantages/advantages-photo-2@1x.jpg"
+                  srcset="img/advantages/advantages-photo-2@2x.jpg 2x" width="320" height="260"
                   alt="«Мост дьявола» недалеко от города «Седона».">
               </picture>
             </div>
@@ -182,7 +188,9 @@
         <div class="map__wrapper">
           <h2 class="visually-hidden">Как до нас добраться?</h2>
 
-          <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d705845.3097549954!2d-111.99087148659737!3d34.73312520121244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1613985955820!5m2!1sru!2sru" width="320" height="350" allowfullscreen title="Sedona, Аризона 86336, США"></iframe>
+          <iframe class="map__iframe"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d705845.3097549954!2d-111.99087148659737!3d34.73312520121244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1613985955820!5m2!1sru!2sru"
+            width="320" height="350" allowfullscreen title="Sedona, Аризона 86336, США"></iframe>
         </div>
       </section>
     </main>
