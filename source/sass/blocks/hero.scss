@@ -52,7 +52,6 @@
     }
   }
 
-
   &::before {
     content: "";
     position: absolute;
@@ -73,10 +72,8 @@
       background-image: url("../img/background/background-triangle-1-desctop.svg");
     }
   }
-
   // clip-path: polygon(100% 0, 100% 92%, 50% 100%, 0 92%, 0 0);
 }
-
 // .hero__wrapper {
 //   display: flex;
 //   height: 100%;
@@ -86,10 +83,9 @@
 
 .hero__image {
   // @include margin-0-auto;
-
   display: block;
 
-   @media (min-width: $width-tablet) {
-      width: 460px;
-    }
+  @media (min-width: $width-tablet) {
+    width: 460px;
+  }
 }
