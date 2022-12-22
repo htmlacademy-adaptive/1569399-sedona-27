@@ -5,6 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/favicon-icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -12,7 +16,7 @@
   <div class="page__container">
     <header class="main-header">
       <a class="main-header__logo logo logo--outer" href="index.html">
-        <img class="main-header__logo-image logo-image" src="img/logo/sedona-logo.svg" width="185" height="96"
+        <img class="main-header__logo-image logo__image" src="img/logo/sedona-logo.svg" width="185" height="96"
           alt="Логотип сайта города «Седона» с изображнием гор.">
       </a>
 
@@ -81,9 +85,17 @@
         <div class="catalog__product-list-wrapper">
           <ul class="catalog__product-list">
             <li class="catalog__product-item catalog__product-item--accent">
-              <a class="catalog__product-link-image" href="#"><img class="catalog__product-image"
-                  src="img/catalog/catalog-photo-1@1.jpg" width="280" height="280"
-                  alt="Дорога в сухой пустыне при восходе солнца."></a>
+              <a class="catalog__product-link-image" href="#">
+                <picture class="catalog__product-picture">
+                  <source media="(min-width: 769px)"
+                    srcset="img/catalog/catalog-photo-1-desctop@1x.jpg 1x, img/catalog/catalog-photo-1-desctop@2x.jpg 2x">
+                  <source media="(min-width: 321px)"
+                    srcset="img/catalog/catalog-photo-1-tablet@1x.jpg 1x, img/catalog/catalog-photo-1-tablet@2x.jpg 2x">
+                  <img class="catalog__product-image" src="img/catalog/catalog-photo-1@1x.jpg"
+                    srcset="img/catalog/catalog-photo-1@2x.jpg 2x" width="320" height="260"
+                    alt="Дорога в сухой пустыне при восходе солнца.">
+                </picture>
+              </a>
 
               <div class="catalog__product-description">
                 <div class="catalog__product-wrapper">
@@ -111,9 +123,17 @@
             </li>
 
             <li class="catalog__product-item">
-              <a class="catalog__product-link-image" href="#"><img class="catalog__product-image"
-                  src="img/catalog/catalog-photo-2@1.jpg" width="280" height="280"
-                  alt="Цветной кактус в пустыне на фоне оранжевых гор и зелени."></a>
+              <a class="catalog__product-link-image" href="#">
+                <picture class="catalog__product-picture">
+                  <source media="(min-width: 769px)"
+                    srcset="img/catalog/catalog-photo-2-desctop@1x.jpg 1x, img/catalog/catalog-photo-2-desctop@2x.jpg 2x">
+                  <source media="(min-width: 321px)"
+                    srcset="img/catalog/catalog-photo-2-tablet@1x.jpg 1x, img/catalog/catalog-photo-2-tablet@2x.jpg 2x">
+                  <img class="catalog__product-image" src="img/catalog/catalog-photo-2@1x.jpg"
+                    srcset="img/catalog/catalog-photo-2@2x.jpg 2x" width="320" height="260"
+                    alt="Цветной кактус в пустыне на фоне оранжевых гор и зелени.">
+                </picture>
+              </a>
 
               <div class="catalog__product-description">
                 <div class="catalog__product-wrapper">
@@ -141,9 +161,17 @@
             </li>
 
             <li class="catalog__product-item">
-              <a class="catalog__product-link-image" href="#"><img class="catalog__product-image"
-                  src="img/catalog/catalog-photo-3@1.jpg" width="280" height="280"
-                  alt="Крутая дорога среди большого количества зелёных и высоких деревьев."></a>
+              <a class="catalog__product-link-image" href="#">
+                <picture class="catalog__product-picture">
+                  <source media="(min-width: 769px)"
+                    srcset="img/catalog/catalog-photo-3-desctop@1x.jpg 1x, img/catalog/catalog-photo-3-desctop@2x.jpg 2x">
+                  <source media="(min-width: 321px)"
+                    srcset="img/catalog/catalog-photo-3-tablet@1x.jpg 1x, img/catalog/catalog-photo-3-tablet@2x.jpg 2x">
+                  <img class="catalog__product-image" src="img/catalog/catalog-photo-3@1x.jpg"
+                    srcset="img/catalog/catalog-photo-3@2x.jpg 2x" width="320" height="260"
+                    alt="Крутая дорога среди большого количества зелёных и высоких деревьев.">
+                </picture>
+              </a>
 
               <div class="catalog__product-description">
                 <div class="catalog__product-wrapper">
@@ -171,9 +199,17 @@
             </li>
 
             <li class="catalog__product-item">
-              <a class="catalog__product-link-image" href="#"><img class="catalog__product-image"
-                  src="img/catalog/catalog-photo-4@1.jpg" width="280" height="280"
-                  alt="Каньон в пустыне на фоне зелени и голубого неба."></a>
+              <a class="catalog__product-link-image" href="#">
+                <picture class="catalog__product-picture">
+                  <source media="(min-width: 769px)"
+                    srcset="img/catalog/catalog-photo-4-desctop@1x.jpg 1x, img/catalog/catalog-photo-4-desctop@2x.jpg 2x">
+                  <source media="(min-width: 321px)"
+                    srcset="img/catalog/catalog-photo-4-tablet@1x.jpg 1x, img/catalog/catalog-photo-4-tablet@2x.jpg 2x">
+                  <img class="catalog__product-image" src="img/catalog/catalog-photo-4@1x.jpg"
+                    srcset="img/catalog/catalog-photo-4@2x.jpg 2x" width="320" height="260"
+                    alt="Каньон в пустыне на фоне зелени и голубого неба.">
+                </picture>
+              </a>
 
               <div class="catalog__product-description">
                 <div class="catalog__product-wrapper">

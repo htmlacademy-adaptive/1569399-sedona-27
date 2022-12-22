@@ -5,6 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/favicon-icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -12,7 +16,7 @@
   <div class="page__container">
     <header class="main-header">
       <a class="main-header__logo logo logo--outer" href="index.html">
-        <img class="main-header__logo-image logo-image" src="img/logo/sedona-logo.svg" width="185" height="96"
+        <img class="main-header__logo-image logo__image" src="img/logo/sedona-logo.svg" width="185" height="96"
           alt="Логотип сайта города «Седона» с изображнием гор.">
       </a>
 
@@ -60,10 +64,11 @@
       <h1 class="visually-hidden">Форма отзыва</h1>
 
       <section class="hero hero--secondary">
-        <div class="hero__wrapper">
-          <h2 class="visually-hidden">Добро пожаловать.</h2>
-          <img class="hero__image" src="img/logo/hero-logo-small.svg" width="229" height="39" alt="Sedona">
-        </div>
+        <!-- <div class="hero__wrapper"> -->
+        <h2 class="visually-hidden">Добро пожаловать.</h2>
+        <img class="hero__image hero__image--secondary" src="img/logo/hero-logo-small.svg" width="229" height="39"
+          alt="Sedona">
+        <!-- </div> -->
       </section>
 
       <section class="survey">
@@ -104,7 +109,7 @@
                       <input class="survey__input-field" id="#survey-input-middle-name" type="text"
                         name="survey-middle-name" placeholder="Викторович" required>
                     </p>
-                </div>
+                  </div>
                 </fieldset>
               </div>
 
@@ -114,17 +119,19 @@
 
                   <div class="survey__content-wrapper survey__content-wrapper--column-right">
                     <p class="survey__input">
-                      <label class="survey__input-title survey__input-title--icon survey__input-title--icon-phone" for="#survey-input-tel">Контактный телефон*:</label>
-                      <input class="survey__input-field survey__input-field--icon"
-                        id="#survey-input-tel" type="tel" name="survey-tel" placeholder="Введите телефон" required>
+                      <label class="survey__input-title survey__input-title--icon survey__input-title--icon-phone"
+                        for="#survey-input-tel">Контактный телефон*:</label>
+                      <input class="survey__input-field survey__input-field--icon" id="#survey-input-tel" type="tel"
+                        name="survey-tel" placeholder="Введите телефон" required>
                     </p>
 
                     <p class="survey__input">
-                      <label class="survey__input-title survey__input-title--icon survey__input-title--icon-email" for="#survey-input-email">Электронная почта*:</label>
-                      <input class="survey__input-field survey__input-field--icon"
-                        id="#survey-input-email" type="text" name="survey-email" placeholder="Введите e-mail" required>
+                      <label class="survey__input-title survey__input-title--icon survey__input-title--icon-email"
+                        for="#survey-input-email">Электронная почта*:</label>
+                      <input class="survey__input-field survey__input-field--icon" id="#survey-input-email" type="text"
+                        name="survey-email" placeholder="Введите e-mail" required>
                     </p>
-                </div>
+                  </div>
                 </fieldset>
               </div>
             </div>
