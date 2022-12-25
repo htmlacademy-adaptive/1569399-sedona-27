@@ -1,4 +1,5 @@
 .footer-copyright {
+  max-width: 220px;
   font-weight: 400;
   text-align: center;
   text-transform: uppercase;
@@ -39,6 +40,7 @@
 
 .footer-copyright__image {
   fill: $color-secondary;
+  flex-shrink: 0;
 }
 
 .footer-copyright__link:hover .footer-copyright__image,

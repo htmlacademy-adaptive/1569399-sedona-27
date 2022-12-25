@@ -282,6 +282,7 @@
 
 .catalog__product-like-image {
   margin-right: 10px;
+  flex-shrink: 0;
   fill: $color-secondary-03;
 
   @media (min-width: $width-desctop) {

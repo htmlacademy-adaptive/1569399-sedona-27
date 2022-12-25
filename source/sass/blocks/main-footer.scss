@@ -46,6 +46,7 @@
 }
 
 .main-footer__social {
+  max-width: 270px;
   margin-bottom: 34px;
 
   @media (min-width: $width-tablet) {

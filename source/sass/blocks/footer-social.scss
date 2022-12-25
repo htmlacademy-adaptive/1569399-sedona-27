@@ -7,6 +7,11 @@
 
   display: flex;
   flex-wrap: wrap;
+
+  @media (min-width: $width-tablet) {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
 }
 
 .footer-social__item {
