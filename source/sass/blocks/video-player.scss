@@ -1,7 +1,15 @@
 .video__player-wrapper {
   @include margin-0-auto;
 
-  margin-top: 40px;
+  margin-top: 38px;
+
+  @media (min-width: $width-tablet) {
+    margin-top: 82px;
+  }
+
+  @media (min-width: $width-desctop) {
+    margin-top: 87px;
+  }
 }
 
 .video-player {

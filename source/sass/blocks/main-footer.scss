@@ -10,6 +10,18 @@
   @media (min-width: $width-desctop) {
     padding: 36px $p-l-r-desctop;
   }
+
+  &--secondary {
+    padding-top: 28px;
+
+    @media (min-width: $width-tablet) {
+      padding-top: 36px;
+    }
+
+    @media (min-width: $width-desctop) {
+      padding-top: 60px;
+    }
+  }
 }
 
 .main-footer__wrapper {

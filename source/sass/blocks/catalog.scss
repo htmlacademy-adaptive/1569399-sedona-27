@@ -6,14 +6,14 @@
 
 // Описание
 .catalog__description-wrapper {
-  padding: 36px $p-l-r 28px;
+  padding: 30px $p-l-r 42px;
 
   @media (min-width: $width-tablet) {
-    padding: 45px $p-l-r-tablet 75px;
+    padding: 65px $p-l-r-tablet 80px;
   }
 
   @media (min-width: $width-desctop) {
-    padding: 60px $p-l-r-desctop 85px;
+    padding: 99px $p-l-r-desctop 87px;
   }
 }
 
@@ -32,6 +32,10 @@
 
   @media (min-width: $width-tablet) {
     font-size: 30px;
+
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
   }
 }
 
@@ -143,7 +147,7 @@
 
 .catalog__product-item--accent .catalog__product-image {
   @media (min-width: $width-tablet) {
-    height: 480px;
+    height: 400px;
   }
 }
 
@@ -165,6 +169,7 @@
     position: absolute;
     bottom: 0;
     width: 100%;
+    padding: 22px 20px 15px;
     color: $color-main;
     background-color: $color-secondary-03;
   }
@@ -190,7 +195,7 @@
 }
 
 .catalog__product-link {
-  margin-bottom: 6px;
+  margin-bottom: 2px;
   display: block;
   font-weight: 700;
   font-size: 14px;
@@ -214,7 +219,7 @@
 
   @media (min-width: $width-tablet) {
     margin-right: 30px;
-    margin-bottom: 0;
+    margin-bottom: 2px;
   }
 
   @media (min-width: $width-desctop) {
@@ -264,7 +269,7 @@
   }
 
   @media (min-width: $width-tablet) {
-    padding: 6px;
+    padding: 5px;
     padding-right: 0;
     justify-content: end;
     align-self: flex-start;
@@ -276,7 +281,7 @@
 }
 
 .catalog__product-like-image {
-  margin-right: 14px;
+  margin-right: 10px;
   fill: $color-secondary-03;
 
   @media (min-width: $width-desctop) {
