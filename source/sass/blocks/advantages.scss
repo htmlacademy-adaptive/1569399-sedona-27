@@ -165,7 +165,7 @@
   display: grid;
 
   @media (min-width: $width-tablet) {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 2fr;
   }
 }
 
@@ -198,10 +198,10 @@
   }
 }
 
-.advantages__picture {
-  grid-column-start: 2;
-  grid-column-end: -1;
-}
+// .advantages__picture {
+//   grid-column-start: 2;
+//   grid-column-end: -1;
+// }
 
 .advantages__image {
   display: block;
@@ -209,8 +209,8 @@
   height: 100%;
   max-height: 256px;
   object-fit: cover;
-  grid-column-start: 2;
-  grid-column-end: -1;
+  // grid-column-start: 2;
+  // grid-column-end: -1;
 }
 
 // Преимущества - внутренний список
@@ -249,7 +249,7 @@
   }
 
   &--house::before {
-    background-image: url("../img/advantages/advantages-icon-house.svg");
+    background-image: url("../img/sprite/sprite.svg#advantages-icon-house");
   }
 
   &--food::before {
