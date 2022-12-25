@@ -4,16 +4,16 @@
 
 // Описание
 .survey__description-wrapper {
-  padding: 36px $p-l-r 28px;
+  padding: 35px $p-l-r 26px;
   text-align: center;
   text-transform: uppercase;
 
   @media (min-width: $width-tablet) {
-    padding: 64px $p-l-r-tablet 102px;
+    padding: 64px $p-l-r-tablet 78px;
   }
 
   @media (min-width: $width-desctop) {
-    padding: 115px $p-l-r-desctop 67px;
+    padding: 115px $p-l-r-desctop 40px;
   }
 }
 
@@ -28,6 +28,14 @@
 
   &:not(:last-child) {
     margin-bottom: 25px;
+
+    @media (min-width: $width-tablet) {
+      margin-bottom: 20px;
+    }
+
+    @media (min-width: $width-desctop) {
+      margin-bottom: 30px;
+    }
   }
 
   @media (min-width: $width-tablet) {
@@ -41,16 +49,20 @@
   &:not(:last-child) {
     margin-bottom: 15px;
   }
+
+  @media (min-width: $width-tablet) {
+    line-height: 24px;
+  }
 }
 
 // Форма опроса
 .survey__form-wrapper {
   @media (min-width: $width-tablet) {
-    padding: 24px $p-l-r-tablet;
+    padding: 24px $p-l-r-tablet 60px;
   }
 
   @media (min-width: $width-desctop) {
-    padding: 24px $p-l-r-desctop;
+    padding: 24px $p-l-r-desctop 60px;
   }
 }
 
@@ -63,8 +75,12 @@
 
   @media (min-width: $width-tablet) {
     row-gap: 44px;
-    margin-bottom: 48px;
+    margin-bottom: 32px;
     padding-bottom: 15px;
+  }
+
+  @media (min-width: $width-desctop) {
+    margin-bottom: 40px;
   }
 
   &::before {
@@ -73,7 +89,7 @@
       position: absolute;
       top: 0;
       bottom: 0;
-      left: 50%;
+      left: 51%;
       display: block;
       width: 1px;
       height: 100%;
@@ -87,11 +103,11 @@
 }
 
 .survey__group-wrapper {
-  padding: 24px $p-l-r;
+  padding: 24px $p-l-r 22px;
   border-top: 1px solid $color-surface-dark;
 
   @media (min-width: $width-tablet) {
-    margin-bottom: 48px;
+    margin-bottom: 46px;
     padding: 0;
 
     border: none;
@@ -100,6 +116,12 @@
   &--column {
     @media (min-width: $width-tablet) {
       margin-bottom: 0;
+    }
+  }
+
+  &--radio {
+    @media (min-width: $width-desctop) {
+      margin-bottom: 55px;
     }
   }
 }
@@ -117,7 +139,7 @@
   text-align: center;
 
   &:not(:last-child) {
-    margin-bottom: 20px;
+    margin-bottom: 21px;
 
     @media (min-width: $width-tablet) {
       margin-bottom: 28px;
@@ -149,6 +171,10 @@
     @media (min-width: $width-tablet) {
       padding: 0 15px;
     }
+
+    @media (min-width: $width-desctop) {
+      margin-left: 8px;
+    }
   }
 }
 
@@ -159,7 +185,7 @@
     }
 
     @media (min-width: $width-desctop) {
-      padding-right: 64px;
+      padding-right: 52px;
     }
   }
 
@@ -169,7 +195,7 @@
     }
 
     @media (min-width: $width-desctop) {
-      padding-left: 64px;
+      padding-left: 79px;
     }
   }
 }
@@ -271,13 +297,14 @@
 
     @media (min-width: $width-desctop) {
       grid-template-columns: repeat(3, minmax(240px, auto));
-      gap: 28px;
+      gap: 62px;
       padding: 17px 53px;
     }
   }
 
   &--mark {
     display: grid;
+    padding-bottom: 8px;
 
     @media (min-width: $width-tablet) {
       grid-template-columns: repeat(2, 1fr);
@@ -288,14 +315,18 @@
     @media (min-width: $width-desctop) {
       grid-template-columns: repeat(4, minmax(150px, auto));
       gap: 16px 64px;
-      padding: 45px 31px;
+      padding: 32px 44px 42px;
     }
   }
 }
 
 .survey__item {
   &:not(:last-child) {
-    margin-bottom: 26px;
+    margin-bottom: 14px;
+
+    @media (min-width: $width-tablet) {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -392,7 +423,7 @@
   display: block;
   width: 100%;
   min-height: 150px;
-  padding: 16px;
+  padding: 12px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -427,11 +458,12 @@
     @include margin-0-auto;
 
     max-width: 768px;
+    min-height: 160px;
   }
 }
 
 .survey__button-wrapper {
-  padding: 24px $p-l-r;
+  padding: 30px $p-l-r 16px;
   display: flex;
   flex-direction: column;
 
@@ -441,6 +473,7 @@
     padding: 0;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
   }
 }
 
@@ -462,8 +495,19 @@
 // }
 
 .survey__note {
+  margin: 0;
+  padding: 0;
   font-size: 12px;
   text-transform: uppercase;
   text-align: right;
   color: $color-secondary-light-03;
+
+  @media (min-width: $width-tablet) {
+    margin: 0;
+    max-width: 50%;
+
+    font-weight: 400;
+    font-size: 14px;
+    color: $color-secondary-light;
+  }
 }
