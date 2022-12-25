@@ -6,10 +6,10 @@
 
 // Описание
 .advantages__description-wrapper {
-  padding: 32px $p-l-r;
+  padding: 35px $p-l-r 17px;
 
   @media (min-width: $width-tablet) {
-    padding: 45px $p-l-r-tablet 55px;
+    padding: 50px $p-l-r-tablet 55px;
   }
 
   @media (min-width: $width-desctop) {
@@ -28,7 +28,11 @@
   font-size: 18px;
 
   &:not(:last-child) {
-    margin-bottom: 25px;
+    margin-bottom: 35px;
+
+    @media (min-width: $width-tablet) {
+      margin-bottom: 29px;
+    }
   }
 
   @media (min-width: $width-tablet) {
@@ -133,14 +137,18 @@
 }
 
 .advantages__item-wrapper {
-  padding: 24px $p-l-r;
+  padding: 27px $p-l-r 25px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
   &--accent {
-    padding: 37px $p-l-r;
+    padding: 40px $p-l-r 36px;
+  }
+
+  &--accent-first {
+    padding: 16px $p-l-r 40px;
   }
 
   @media (min-width: $width-tablet) {
@@ -149,6 +157,10 @@
 
     &--accent {
       padding: 33px;
+    }
+
+    &--accent-secondary {
+      grid-column-start: 2;
     }
   }
 
@@ -163,14 +175,25 @@
 
 .advantages__item-accent-wrapper {
   display: grid;
+  grid-auto-flow: dense;
 
   @media (min-width: $width-tablet) {
     grid-template-columns: 1fr 2fr;
+  }
+
+  &--secondary {
+    @media (min-width: $width-tablet) {
+      grid-template-columns: 2fr 1fr;
+    }
   }
 }
 
 .advantages__title {
   @include title;
+
+  @media (min-width: $width-tablet) {
+    font-size: 21px;
+  }
 
   &:not(:last-child) {
     margin-bottom: 11px;
@@ -186,7 +209,11 @@
   padding: 0;
 
   &:not(:last-child) {
-    margin-bottom: 11px;
+    margin-bottom: 15px;
+
+    @media (min-width: $width-tablet) {
+      margin-bottom: 22px;
+    }
   }
 }
 
@@ -207,7 +234,7 @@
   display: block;
   width: 100%;
   height: 100%;
-  max-height: 256px;
+  max-height: 260px;
   object-fit: cover;
   // grid-column-start: 2;
   // grid-column-end: -1;
@@ -219,7 +246,7 @@
 
   display: grid;
   gap: 25px;
-  padding: 23px $p-l-r;
+  padding: 23px $p-l-r 42px;
   text-align: left;
   color: $color-secondary-light;
   background-color: $color-main;
@@ -234,7 +261,7 @@
 .advantages__sub-item {
   position: relative;
   padding-top: 8px;
-  padding-left: 47px;
+  padding-left: 45px;
 
   &::before {
     content: "";
@@ -249,7 +276,9 @@
   }
 
   &--house::before {
-    background-image: url("../img/sprite/sprite.svg#advantages-icon-house");
+    background-image: url("../img/advantages/advantages-icon-house.svg");
+    // background-image: url("../img/sprite/sprite.svg#advantages-icon-house");
+    // Добавление фона через спрайт
   }
 
   &--food::before {
@@ -262,12 +291,12 @@
 
 
   @media (min-width: $width-tablet) {
-    padding: 160px 33px 60px 33px;
+    padding: 156px 33px 63px 33px;
     text-align: center;
 
     &::before {
       content: "";
-      top: 50px;
+      top: 55px;
       left: 50%;
       transform: translateX(-50%);
       width: 77px;
@@ -282,7 +311,7 @@
 
     &::before {
       content: "";
-      top: 60px;
+      top: 66px;
       left: 50%;
       transform: translateX(-50%);
       width: 77px;
@@ -298,8 +327,16 @@
 .advantages__sub-title {
   @include title;
 
+  @media (min-width: $width-tablet) {
+    font-size: 21px;
+  }
+
   &:not(:last-child) {
-    margin-bottom: 11px;
+    margin-bottom: 17px;
+
+    @media (min-width: $width-tablet) {
+      margin-bottom: 21px;
+    }
   }
 }
 

@@ -5,6 +5,10 @@
 
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $width-tablet) {
+    margin-right: 10px;
+  }
 }
 
 .footer-contacts__text {
