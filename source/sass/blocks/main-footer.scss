@@ -1,5 +1,5 @@
 .main-footer {
-  padding: 29px $p-l-r 23px;
+  padding: 36px $p-l-r 23px;
   text-align: center;
   background-color: $color-main;
 
@@ -9,6 +9,18 @@
 
   @media (min-width: $width-desctop) {
     padding: 36px $p-l-r-desctop;
+  }
+
+  &--secondary {
+    padding-top: 28px;
+
+    @media (min-width: $width-tablet) {
+      padding-top: 36px;
+    }
+
+    @media (min-width: $width-desctop) {
+      padding-top: 60px;
+    }
   }
 }
 
@@ -34,9 +46,11 @@
 }
 
 .main-footer__social {
+  max-width: 270px;
   margin-bottom: 34px;
 
   @media (min-width: $width-tablet) {
+    margin-right: 10px;
     margin-bottom: 0;
   }
 }

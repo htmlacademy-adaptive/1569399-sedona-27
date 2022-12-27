@@ -1,14 +1,22 @@
 .footer-copyright {
+  max-width: 220px;
   font-weight: 400;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $width-tablet) {
+    // margin-right: 20px;
+  }
 }
 
 
 .footer-copyright__link {
   display: flex;
   align-items: center;
-
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
   text-decoration: none;
   color: $color-secondary;
   outline: none;
@@ -27,11 +35,12 @@
 }
 
 .footer-copyright__text {
-  margin-right: 4px;
+  margin-right: 8px;
 }
 
 .footer-copyright__image {
   fill: $color-secondary;
+  flex-shrink: 0;
 }
 
 .footer-copyright__link:hover .footer-copyright__image,

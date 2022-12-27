@@ -41,10 +41,11 @@
 
   &--secondary {
     background-position: bottom, bottom;
-    padding: 60px $p-l-r 67px;
+    padding: 50px $p-l-r 65px;
 
     @media (min-width: $width-tablet) {
       min-height: 290px;
+      padding-top: 42px;
     }
 
     @media (min-width: $width-desctop) {
