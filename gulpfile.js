@@ -8,7 +8,7 @@ import browser from 'browser-sync';
 import rename from 'gulp-rename';
 import htmlmin from 'gulp-htmlmin';
 import terser from 'gulp-terser';
-// import squoosh from 'gulp-libsquoosh';
+import squoosh from 'gulp-libsquoosh';
 // import svgo from 'gulp-svgmin';
 // import svgstore from 'gulp-svgstore';
 // import del from 'del';
@@ -31,7 +31,7 @@ export const styles = () => {
 
 // HTML
 
-export const html = () => {
+const html = () => {
   return gulp.src('source/*.html')
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest('build'))
@@ -39,10 +39,34 @@ export const html = () => {
 
 // Scripts
 
-export const scripts = () => {
+const scripts = () => {
   return gulp.src('source/js/*.js')
   .pipe(terser())
   .pipe(gulp.dest('build/js'))
+}
+
+// Images
+const optimizeImages = () => {
+  return gulp.src('source/img/**/*.{jpg,png}')
+    .pipe(squoosh())
+    .pipe(gulp.dest('build/img'))
+}
+
+const copyImages = () => {
+  return gulp.src('source/img/**/*.{jpg,png}')
+    .pipe(gulp.dest('build/img'))
+}
+
+// WebP
+
+export const createWebp = () => {
+  return gulp.src('source/img/**/*.{jpg,png}')
+    .pipe(
+      squoosh({
+        webp:{},
+      })
+    )
+    .pipe(gulp.dest('build/img'))
 }
 
 // Server
