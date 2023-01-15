@@ -9,8 +9,8 @@ import rename from 'gulp-rename';
 import htmlmin from 'gulp-htmlmin';
 import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
-// import svgo from 'gulp-svgmin';
-// import svgstore from 'gulp-svgstore';
+import svgo from 'gulp-svgmin';
+import svgstore from 'gulp-svgstore';
 // import del from 'del';
 // import browser from 'browser-sync';
 
@@ -59,7 +59,7 @@ const copyImages = () => {
 
 // WebP
 
-export const createWebp = () => {
+const createWebp = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
     .pipe(
       squoosh({
@@ -67,6 +67,23 @@ export const createWebp = () => {
       })
     )
     .pipe(gulp.dest('build/img'))
+}
+
+// SVG
+
+export const svg = () =>
+  gulp.src(['source/img/**/*.svg', '!source/img/sprite_icons/*.svg'])
+  .pipe(svgo())
+  .pipe(gulp.dest('build/img'));
+
+export const sprite = () => {
+  return gulp.src(['source/img/sprite_icons/*.svg'])
+  .pipe(svgo())
+  .pipe(svgstore({
+    inlineSvg: true
+  }))
+  .pipe(rename('sprite.svg'))
+  .pipe(gulp.dest('build/img'));
 }
 
 // Server
