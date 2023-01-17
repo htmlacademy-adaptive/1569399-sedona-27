@@ -11,7 +11,7 @@ import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
-// import del from 'del';
+import del from 'del';
 // import browser from 'browser-sync';
 
 // Styles
@@ -86,7 +86,6 @@ const sprite = () => {
     .pipe(gulp.dest('build/img'));
 }
 
-
 // Copy
 
 export const copy = (done) => {
@@ -101,6 +100,13 @@ export const copy = (done) => {
     .pipe(gulp.dest('build'))
   done();
 }
+
+// Clean
+
+export const clean = () => {
+  return del('build');
+}
+
 // Server
 
 const server = (done) => {
