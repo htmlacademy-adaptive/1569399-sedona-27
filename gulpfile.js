@@ -41,8 +41,8 @@ const html = () => {
 
 const scripts = () => {
   return gulp.src('source/js/*.js')
-  .pipe(terser())
-  .pipe(gulp.dest('build/js'))
+    .pipe(terser())
+    .pipe(gulp.dest('build/js'))
 }
 
 // Images
@@ -63,7 +63,7 @@ const createWebp = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
     .pipe(
       squoosh({
-        webp:{},
+        webp: {},
       })
     )
     .pipe(gulp.dest('build/img'))
@@ -71,21 +71,36 @@ const createWebp = () => {
 
 // SVG
 
-export const svg = () =>
+const svg = () =>
   gulp.src(['source/img/**/*.svg', '!source/img/sprite_icons/*.svg'])
-  .pipe(svgo())
-  .pipe(gulp.dest('build/img'));
+    .pipe(svgo())
+    .pipe(gulp.dest('build/img'));
 
-export const sprite = () => {
+const sprite = () => {
   return gulp.src(['source/img/sprite_icons/*.svg'])
-  .pipe(svgo())
-  .pipe(svgstore({
-    inlineSvg: true
-  }))
-  .pipe(rename('sprite.svg'))
-  .pipe(gulp.dest('build/img'));
+    .pipe(svgo())
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
+    .pipe(rename('sprite.svg'))
+    .pipe(gulp.dest('build/img'));
 }
 
+
+// Copy
+
+export const copy = (done) => {
+  gulp.src([
+    'source/fonts/*.{woff2,woff}',
+    'source/*.ico',
+    'source/*.webmanifest',
+    'source/img/favicons/*',
+  ], {
+    base: 'source'
+  })
+    .pipe(gulp.dest('build'))
+  done();
+}
 // Server
 
 const server = (done) => {
