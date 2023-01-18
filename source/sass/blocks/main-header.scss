@@ -11,10 +11,20 @@
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
+  width: 185px;
+  height: 96px;
 
   @media (min-width: $width-tablet) {
     z-index: 2;
   }
+}
+
+.main-header__logo:hover .main-header__logo-image--hover {
+  filter: brightness(1.07);
+}
+
+.main-header__logo:focus .main-header__logo-image--hover {
+  filter: brightness(1.07);
 }
 
 // .main-header__logo-image {

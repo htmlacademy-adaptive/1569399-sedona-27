@@ -19,6 +19,14 @@
   cursor: pointer;
   background-color: $color-surface-lighten;
 
+  :hover {
+    background-color: $color-secondary-01;
+  }
+
+  :focus {
+    background-color: $color-secondary-01;
+  }
+
   @media (min-width: $width-tablet) {
     width: 648px;
     height: 500px;
@@ -64,12 +72,12 @@
 
 .video-player__button:hover .video-player__icon {
   fill: $color-main;
+  background-color: transparent;
 }
 
 .video-player__button:focus .video-player__icon {
   fill: $color-main;
 }
-
 
 .video-player__button:active .video-player__icon {
   fill: $color-main-07;
