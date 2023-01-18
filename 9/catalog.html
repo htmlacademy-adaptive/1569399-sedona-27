@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>HTML Academy: Седона</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/favicon-icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="css/style.min.css">
+  <base href="https://htmlacademy-adaptive.github.io/1569399-sedona-27/9/">
+</head>
+
+<body class="page__body">
+  <div class="page__container">
+    <header class="main-header">
+      <a class="main-header__logo logo logo--outer" href="index.html">
+        <img class="main-header__logo-image main-header__logo-image--hover logo__image" src="img/logo/sedona-logo.svg" width="185" height="96" alt="Логотип сайта города «Седона» с изображнием гор.">
+      </a>
+
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+
+          <svg class="main-nav__image main-nav__image--burger" aria-hidden="true" focusable="false" width="24" height="20" viewBox="0 0 24 20">
+            <use href="./img/sprite/sprite.svg#menu-icon-burger"/>
+          </svg>
+
+          <svg class="main-nav__image main-nav__image--cross" aria-hidden="true" focusable="false" width="26" height="25" viewBox="0 0 26 25">
+            <use href="./img/sprite/sprite.svg#menu-icon-cross"/>
+          </svg>
+        </button>
+
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--column-a">
+              <a class="main-nav__link" href="index.html">Главная</a>
+            </li>
+
+            <li class="main-nav__item main-nav__item--column-b">
+              <a class="main-nav__link main-nav__link--active">Фото и видео</a>
+            </li>
+
+            <li class="main-nav__item main-nav__item--column-c">
+              <a class="main-nav__link" href="form.html">Форма отзыва</a>
+            </li>
+
+            <li class="main-nav__item main-nav__item--column-d">
+              <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main-container">
+      <h1 class="visually-hidden">Каталог туристического сайта города «Седона».</h1>
+
+      <section class="hero hero--secondary">
+        <div class="hero__wrapper">
+          <h2 class="visually-hidden">Добро пожаловать.</h2>
+          <img class="hero__image" src="img/logo/hero-logo-small.svg" width="229" height="39" alt="Sedona">
+        </div>
+      </section>
+
+      <section class="catalog">
+        <div class="catalog__description-wrapper">
+          <div class="catalog__description-content">
+            <h2 class="catalog__description-title">Фото и видео
+            </h2>
+            <p class="catalog__description-text">Не можете решиться на путешествие из-за курса?<br>
+              Фотографии помогут вам забыть о политике и экономике.
+            </p>
+          </div>
+        </div>
+
+        <div class="catalog__product-list-wrapper">
+          <ul class="catalog__product-list">
+            <li class="catalog__product-item catalog__product-item--accent">
+              <a class="catalog__product-link-image" href="#">
+                <picture class="catalog__product-picture">
+                  <source media="(min-width: 1200px)" srcset="img/catalog/catalog-photo-1-desctop@1x.webp, img/catalog/catalog-photo-1-desctop@2x.webp 2x">
+                  <source media="(min-width: 768px)" srcset="img/catalog/catalog-photo-1-tablet@1x.webp, img/catalog/catalog-photo-1-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/catalog/catalog-photo-1@1x.webp, img/catalog/catalog-photo-1@2x.webp 2x">
+
+                  <source media="(min-width: 1200px)" srcset="img/catalog/catalog-photo-1-desctop@1x.jpg, img/catalog/catalog-photo-1-desctop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/catalog/catalog-photo-1-tablet@1x.jpg, img/catalog/catalog-photo-1-tablet@2x.jpg 2x">
+                  <img class="catalog__product-image" src="img/catalog/catalog-photo-1@1x.jpg" srcset="img/catalog/catalog-photo-1@2x.jpg 2x" width="280" height="280" alt="Дорога в сухой пустыне при восходе солнца.">
+                </picture>
+              </a>
+
+              <div class="catalog__product-description">
+                <div class="catalog__product-wrapper">
+                  <a class="catalog__product-link" href="#">
+                    <h3 class="catalog__product-title">Неродные просторы</h3>
+                  </a>
+                  <p class="catalog__product-author">Автор фото: <span class="catalog__product-name">Борис</span></p>
+                </div>
+
+                <div class="catalog__product-like-wrapper">
+                  <a class="catalog__product-like-link" href="#">
+                    <span class="visually-hidden">Поставить лайк.</span>
+                    <svg class="catalog__product-like-image" aria-hidden="true" focusable="false" width="22" height="20" viewBox="0 0 22 20">
+                      <use href="./img/sprite/sprite.svg#icon-like"/>
+                    </svg>
+
+                    <p class="catalog__product-like-number"> <span class="visually-hidden">Количество лайков:
+                      </span>1350
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <li class="catalog__product-item">
+              <a class="catalog__product-link-image" href="#">
+                <picture class="catalog__product-picture">
+                  <source media="(min-width: 1200px)" srcset="img/catalog/catalog-photo-2-desctop@1x.webp, img/catalog/catalog-photo-2-desctop@2x.webp 2x">
+                  <source media="(min-width: 768px)" srcset="img/catalog/catalog-photo-2-tablet@1x.webp, img/catalog/catalog-photo-2-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/catalog/catalog-photo-2@1x.webp, img/catalog/catalog-photo-2@2x.webp 2x">
+
+                  <source media="(min-width: 1200px)" srcset="img/catalog/catalog-photo-2-desctop@1x.jpg, img/catalog/catalog-photo-2-desctop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/catalog/catalog-photo-2-tablet@1x.jpg, img/catalog/catalog-photo-2-tablet@2x.jpg 2x">
+                  <img class="catalog__product-image" src="img/catalog/catalog-photo-2@1x.jpg" srcset="img/catalog/catalog-photo-2@2x.jpg 2x" width="280" height="280" alt="Цветной кактус в пустыне на фоне оранжевых гор и зелени.">
+                </picture>
+              </a>
+
+              <div class="catalog__product-description">
+                <div class="catalog__product-wrapper">
+                  <a class="catalog__product-link" href="#">
+                    <h3 class="catalog__product-title">Местная растительность</h3>
+                  </a>
+                  <p class="catalog__product-author">Автор фото: <span class="catalog__product-name">Сергей</span></p>
+                </div>
+
+                <div class="catalog__product-like-wrapper">
+                  <a class="catalog__product-like-link" href="#">
+                    <span class="visually-hidden">Поставить лайк.</span>
+                    <svg class="catalog__product-like-image" aria-hidden="true" focusable="false" width="22" height="20" viewBox="0 0 22 20">
+                      <use href="./img/sprite/sprite.svg#icon-like"/>
+                    </svg>
+
+                    <p class="catalog__product-like-number"> <span class="visually-hidden">Количество лайков:
+                      </span>143
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <li class="catalog__product-item">
+              <a class="catalog__product-link-image" href="#">
+                <picture class="catalog__product-picture">
+                  <source media="(min-width: 1200px)" srcset="img/catalog/catalog-photo-3-desctop@1x.webp, img/catalog/catalog-photo-3-desctop@2x.webp 2x">
+                  <source media="(min-width: 768px)" srcset="img/catalog/catalog-photo-3-tablet@1x.webp, img/catalog/catalog-photo-3-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/catalog/catalog-photo-3@1x.webp, img/catalog/catalog-photo-3@2x.webp 2x">
+
+                  <source media="(min-width: 1200px)" srcset="img/catalog/catalog-photo-3-desctop@1x.jpg, img/catalog/catalog-photo-3-desctop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/catalog/catalog-photo-3-tablet@1x.jpg, img/catalog/catalog-photo-3-tablet@2x.jpg 2x">
+                  <img class="catalog__product-image" src="img/catalog/catalog-photo-3@1x.jpg" srcset="img/catalog/catalog-photo-3@2x.jpg 2x" width="280" height="280" alt="Крутая дорога среди большого количества зелёных и высоких деревьев.">
+                </picture>
+              </a>
+
+              <div class="catalog__product-description">
+                <div class="catalog__product-wrapper">
+                  <a class="catalog__product-link" href="#">
+                    <h3 class="catalog__product-title">Дорога на север</h3>
+                  </a>
+                  <p class="catalog__product-author">Автор фото: <span class="catalog__product-name">Петр</span></p>
+                </div>
+
+                <div class="catalog__product-like-wrapper">
+                  <a class="catalog__product-like-link" href="#">
+                    <span class="visually-hidden">Поставить лайк.</span>
+                    <svg class="catalog__product-like-image" aria-hidden="true" focusable="false" width="22" height="20" viewBox="0 0 22 20">
+                      <use href="./img/sprite/sprite.svg#icon-like"/>
+                    </svg>
+
+                    <p class="catalog__product-like-number"> <span class="visually-hidden">Количество лайков:
+                      </span>96
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <li class="catalog__product-item">
+              <a class="catalog__product-link-image" href="#">
+                <picture class="catalog__product-picture">
+                  <source media="(min-width: 1200px)" srcset="img/catalog/catalog-photo-4-desctop@1x.webp, img/catalog/catalog-photo-4-desctop@2x.webp 2x">
+                  <source media="(min-width: 768px)" srcset="img/catalog/catalog-photo-4-tablet@1x.webp, img/catalog/catalog-photo-4-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/catalog/catalog-photo-4@1x.webp, img/catalog/catalog-photo-4@2x.webp 2x">
+
+                  <source media="(min-width: 1200px)" srcset="img/catalog/catalog-photo-4-desctop@1x.jpg, img/catalog/catalog-photo-4-desctop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/catalog/catalog-photo-4-tablet@1x.jpg, img/catalog/catalog-photo-4-tablet@2x.jpg 2x">
+                  <img class="catalog__product-image" src="img/catalog/catalog-photo-4@1x.jpg" srcset="img/catalog/catalog-photo-4@2x.jpg 2x" width="280" height="280" alt="Каньон в пустыне на фоне зелени и голубого неба.">
+                </picture>
+              </a>
+
+              <div class="catalog__product-description">
+                <div class="catalog__product-wrapper">
+                  <a class="catalog__product-link" href="#">
+                    <h3 class="catalog__product-title">Мост дьявола</h3>
+                  </a>
+                  <p class="catalog__product-author">Автор фото: <span class="catalog__product-name">Антон</span></p>
+                </div>
+
+                <div class="catalog__product-like-wrapper">
+                  <a class="catalog__product-like-link" href="#">
+                    <span class="visually-hidden">Поставить лайк.</span>
+                    <svg class="catalog__product-like-image" aria-hidden="true" focusable="false" width="22" height="20" viewBox="0 0 22 20">
+                      <use href="./img/sprite/sprite.svg#icon-like"/>
+                    </svg>
+
+                    <p class="catalog__product-like-number"> <span class="visually-hidden">Количество лайков:
+                      </span>254
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="video">
+        <div class="video__description-content">
+          <h2 class="video__description-title">Все еще сомневаетесь?
+          </h2>
+          <p class="video__description-text">Смотрите видеопрезентацию и скорее&nbsp;за билетами, пока они
+            не&nbsp;подорожали в очередной раз!
+          </p>
+        </div>
+
+        <div class="video__player-wrapper video-player">
+          <picture class="video__player-picture">
+            <source media="(min-width: 1200px)" srcset="img/video/video-photo-1-desctop@1x.webp, img/video/video-photo-1-desctop@2x.webp 2x">
+            <source media="(min-width: 768px)" srcset="img/video/video-photo-1-tablet@1x.webp, img/video/video-photo-1-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/video/video-photo-1@1x.webp, img/video/video-photo-1@1x.webp 2x">
+
+            <source media="(min-width: 1200px)" srcset="img/video/video-photo-1-desctop@1x.jpg, img/video/video-photo-1-desctop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/video/video-photo-1-tablet@1x.jpg, img/video/video-photo-1-tablet@2x.jpg 2x">
+            <img class="video__player-image video-player__image" src="img/video/video-photo-1@1x.jpg" srcset="img/video/video-photo-1@2x.jpg 2x" width="280" height="177" alt="Дорога среди пустынных каньонов.">
+          </picture>
+          <button class="video__player-button video-player__button" type="button">
+            <span class="visually-hidden">Воспроизвести видео</span>
+
+            <svg class="video__player-icon video-player__icon" aria-hidden="true" focusable="false" width="48" height="54" viewBox="0 0 48 54">
+              <use href="./img/sprite/sprite.svg#icon-play"/>
+            </svg>
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="main-footer main-footer--secondary">
+      <div class="main-footer__wrapper">
+        <section class="main-footer__contants footer-contacts">
+          <h2 class="visually-hidden">Контакты.</h2>
+
+          <p class="footer-contacts__text">#visitsedona</p>
+        </section>
+
+        <section class="main-footer__social footer-social">
+          <h2 class="visually-hidden">Социальные сети.</h2>
+
+          <ul class="footer-social__list">
+            <li class="footer-social__item">
+              <a class="footer-social__link" href="https://vk.com/htmlacademy">
+                <span class="visually-hidden">В Контакте.</span>
+                <svg class="footer-social__image" aria-hidden="true" focusable="false" width="24" height="14" viewBox="0 0 24 14">
+                  <use href="./img/sprite/sprite.svg#social-icon-vkontakte"/>
+                </svg>
+              </a>
+            </li>
+
+            <li class="footer-social__item">
+              <a class="footer-social__link" href="https://t.me/htmlacademy">
+                <span class="visually-hidden">Telegram.</span>
+                <svg class="footer-social__image" aria-hidden="true" focusable="false" width="22" height="18" viewBox="0 0 22 18">
+                  <use href="./img/sprite/sprite.svg#social-icon-telegram"/>
+                </svg>
+              </a>
+            </li>
+
+            <li class="footer-social__item">
+              <a class="footer-social__link" href="https://www.youtube.com/user/htmlacademyru">
+                <span class="visually-hidden">YouTube.</span>
+                <svg class="footer-social__image" aria-hidden="true" focusable="false" width="20" height="14" viewBox="0 0 20 14" fill="#000000" xmlns="http://www.w3.org/2000/svg">
+                  <use href="./img/sprite/sprite.svg#social-icon-youtube"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="main-footer__copyright footer-copyright">
+          <h2 class="visually-hidden">Копирайт.</h2>
+
+          <a class="footer-copyright__link" href="https://htmlacademy.ru/">
+            <span class="footer-copyright__text">Разработано</span>
+            <span class="visually-hidden">HTML Academy.</span>
+            <svg class="footer-copyright__image" aria-hidden="true" focusable="false" width="28" height="34" viewBox="0 0 28 34">
+              <use href="./img/sprite/sprite.svg#logo-htmlacademy"/>
+            </svg>
+          </a>
+        </section>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

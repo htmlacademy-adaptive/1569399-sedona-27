@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>HTML Academy: Седона</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/favicon-icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="css/style.min.css">
+  <base href="https://htmlacademy-adaptive.github.io/1569399-sedona-27/9/">
+</head>
+
+<body class="page__body">
+  <div class="page__container">
+    <header class="main-header">
+      <a class="main-header__logo logo logo--outer" href="index.html">
+        <img class="main-header__logo-image main-header__logo-image--hover logo__image" src="img/logo/sedona-logo.svg" width="185" height="96" alt="Логотип сайта города «Седона» с изображнием гор.">
+      </a>
+
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+
+          <svg class="main-nav__image main-nav__image--burger" aria-hidden="true" focusable="false" width="24" height="20" viewBox="0 0 24 20">
+            <use href="./img/sprite/sprite.svg#menu-icon-burger"/>
+          </svg>
+
+          <svg class="main-nav__image main-nav__image--cross" aria-hidden="true" focusable="false" width="26" height="25" viewBox="0 0 26 25">
+            <use href="./img/sprite/sprite.svg#menu-icon-cross"/>
+          </svg>
+        </button>
+
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--column-a">
+              <a class="main-nav__link" href="index.html">Главная</a>
+            </li>
+
+            <li class="main-nav__item main-nav__item--column-b">
+              <a class="main-nav__link" href="error.html">Фото и видео</a>
+            </li>
+
+            <li class="main-nav__item main-nav__item--column-c">
+              <a class="main-nav__link" href="form.html">Форма отзыва</a>
+            </li>
+
+            <li class="main-nav__item main-nav__item--column-d">
+              <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main-container">
+      <h1 class="visually-hidden">Страницы не найдена.</h1>
+
+      <section class="hero hero--secondary">
+        <div class="hero__wrapper">
+          <h2 class="visually-hidden">Добро пожаловать.</h2>
+          <img class="hero__image" src="img/logo/hero-logo-small.svg" width="229" height="39" alt="Sedona">
+        </div>
+      </section>
+
+      <section class="error">
+        <div class="error__description-wrapper">
+          <div class="error__description-content">
+            <h2 class="error__description-title">Упс, ошибка!
+            </h2>
+            <p class="error__description-text">Данная страница не найдена или не существует, но это ещё не точно.
+            </p>
+            <a class="error__button button" href="index.html">Перейти на главную страницу</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <div class="main-footer__wrapper">
+        <section class="main-footer__contants footer-contacts">
+          <h2 class="visually-hidden">Контакты.</h2>
+
+          <p class="footer-contacts__text">#visitsedona</p>
+        </section>
+
+        <section class="main-footer__social footer-social">
+          <h2 class="visually-hidden">Социальные сети.</h2>
+
+          <ul class="footer-social__list">
+            <li class="footer-social__item">
+              <a class="footer-social__link" href="https://vk.com/htmlacademy">
+                <span class="visually-hidden">В Контакте.</span>
+                <svg class="footer-social__image" aria-hidden="true" focusable="false" width="24" height="14" viewBox="0 0 24 14">
+                  <use href="./img/sprite/sprite.svg#social-icon-vkontakte"/>
+                </svg>
+              </a>
+            </li>
+
+            <li class="footer-social__item">
+              <a class="footer-social__link" href="https://t.me/htmlacademy">
+                <span class="visually-hidden">Telegram.</span>
+                <svg class="footer-social__image" aria-hidden="true" focusable="false" width="22" height="18" viewBox="0 0 22 18">
+                  <use href="./img/sprite/sprite.svg#social-icon-telegram"/>
+                </svg>
+              </a>
+            </li>
+
+            <li class="footer-social__item">
+              <a class="footer-social__link" href="https://www.youtube.com/user/htmlacademyru">
+                <span class="visually-hidden">YouTube.</span>
+                <svg class="footer-social__image" aria-hidden="true" focusable="false" width="20" height="14" viewBox="0 0 20 14" fill="#000000" xmlns="http://www.w3.org/2000/svg">
+                  <use href="./img/sprite/sprite.svg#social-icon-youtube"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="main-footer__copyright footer-copyright">
+          <h2 class="visually-hidden">Копирайт.</h2>
+
+          <a class="footer-copyright__link" href="https://htmlacademy.ru/">
+            <span class="footer-copyright__text">Разработано</span>
+            <span class="visually-hidden">HTML Academy.</span>
+            <svg class="footer-copyright__image" aria-hidden="true" focusable="false" width="28" height="34" viewBox="0 0 28 34">
+              <use href="./img/sprite/sprite.svg#logo-htmlacademy"/>
+            </svg>
+          </a>
+        </section>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
