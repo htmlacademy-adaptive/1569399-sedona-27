@@ -32,21 +32,15 @@
 
     @media (min-width: $width-tablet) {
       margin-bottom: 29px;
+
+      .breaker--tablet {
+        display: none;
+      }
     }
   }
 
   @media (min-width: $width-tablet) {
     font-size: 21px;
-  }
-
-  br {
-    display: none;
-  }
-
-  @media (max-width: $width-mobile) {
-    br {
-      display: block;
-    }
   }
 }
 
@@ -191,8 +185,16 @@
 .advantages__title {
   @include title;
 
+  .breaker {
+    display: none;
+  }
+
   @media (min-width: $width-tablet) {
     font-size: 21px;
+
+    .breaker--tablet {
+      display: inline;
+    }
   }
 
   &:not(:last-child) {
@@ -223,12 +225,35 @@
   &:not(:last-child) {
     margin-bottom: 15px;
   }
-}
 
-// .advantages__picture {
-//   grid-column-start: 2;
-//   grid-column-end: -1;
-// }
+  .breaker {
+    display: none;
+
+    &--mobile {
+      display: inline;
+    }
+  }
+
+  @media (min-width: $width-tablet) {
+    .breaker--mobile {
+      display: none;
+    }
+
+    .breaker--tablet {
+      display: inline;
+    }
+  }
+
+  @media (min-width: $width-desctop) {
+    .breaker {
+      display: none;
+    }
+
+    .breaker--desctop {
+      display: inline;
+    }
+  }
+}
 
 .advantages__image {
   display: block;
@@ -236,8 +261,6 @@
   height: 100%;
   max-height: 260px;
   object-fit: cover;
-  // grid-column-start: 2;
-  // grid-column-end: -1;
 }
 
 // Преимущества - внутренний список
@@ -277,8 +300,6 @@
 
   &--house::before {
     background-image: url("../img/advantages/advantages-icon-house.svg");
-    // background-image: url("../img/sprite/sprite.svg#advantages-icon-house");
-    // Добавление фона через спрайт
   }
 
   &--food::before {
@@ -288,7 +309,6 @@
   &--souvenirs::before {
     background-image: url("../img/advantages/advantages-icon-souvenirs.svg");
   }
-
 
   @media (min-width: $width-tablet) {
     padding: 156px 33px 63px 33px;
@@ -303,7 +323,6 @@
       height: 77px;
     }
   }
-
 
   @media (min-width: $width-desctop) {
     padding: 170px 50px 70px 50px;
@@ -321,7 +340,6 @@
 }
 
 // .advantages__sub-item-wrapper {
-
 // }
 
 .advantages__sub-title {
@@ -342,6 +360,16 @@
 
 .advantages__sub-text {
   @include text;
+
+  .breaker {
+    display: none;
+  }
+
+  @media (min-width: $width-tablet) {
+    .breaker--tablet {
+      display: inline;
+    }
+  }
 
   &:not(:last-child) {
     margin-bottom: 15px;

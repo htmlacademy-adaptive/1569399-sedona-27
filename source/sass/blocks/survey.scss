@@ -50,8 +50,16 @@
     margin-bottom: 15px;
   }
 
+  .breaker {
+    display: none;
+  }
+
   @media (min-width: $width-tablet) {
     line-height: 24px;
+
+    .breaker--tablet {
+      display: inline;
+    }
   }
 }
 
@@ -339,9 +347,8 @@
   cursor: pointer;
 }
 
-.survey__control-input {
-  // position: relative;
-}
+// .survey__control-input {
+// }
 
 // Radio control
 .survey__control-radio {

@@ -10,6 +10,10 @@
   <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/ptsans.woff" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold2.woff" type="font/woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body class="page__body">
@@ -72,7 +76,7 @@
           <div class="catalog__description-content">
             <h2 class="catalog__description-title">Фото и видео
             </h2>
-            <p class="catalog__description-text">Не можете решиться на путешествие из-за курса?<br>
+            <p class="catalog__description-text">Не можете решиться на путешествие из-за курса?<br class="breaker breaker--tablet">
               Фотографии помогут вам забыть о политике и экономике.
             </p>
           </div>
@@ -81,7 +85,7 @@
         <div class="catalog__product-list-wrapper">
           <ul class="catalog__product-list">
             <li class="catalog__product-item catalog__product-item--accent">
-              <a class="catalog__product-link-image" href="#">
+              <a class="catalog__product-link-image" href="error.html">
                 <picture class="catalog__product-picture">
                   <source media="(min-width: 1200px)"
                     srcset="img/catalog/catalog-photo-1-desctop@1x.webp 1x, img/catalog/catalog-photo-1-desctop@2x.webp 2x">
@@ -125,7 +129,7 @@
             </li>
 
             <li class="catalog__product-item">
-              <a class="catalog__product-link-image" href="#">
+              <a class="catalog__product-link-image" href="error.html">
                 <picture class="catalog__product-picture">
                   <source media="(min-width: 1200px)"
                     srcset="img/catalog/catalog-photo-2-desctop@1x.webp 1x, img/catalog/catalog-photo-2-desctop@2x.webp 2x">
@@ -169,7 +173,7 @@
             </li>
 
             <li class="catalog__product-item">
-              <a class="catalog__product-link-image" href="#">
+              <a class="catalog__product-link-image" href="error.html">
                 <picture class="catalog__product-picture">
                   <source media="(min-width: 1200px)"
                     srcset="img/catalog/catalog-photo-3-desctop@1x.webp 1x, img/catalog/catalog-photo-3-desctop@2x.webp 2x">
@@ -213,7 +217,7 @@
             </li>
 
             <li class="catalog__product-item">
-              <a class="catalog__product-link-image" href="#">
+              <a class="catalog__product-link-image" href="error.html">
                 <picture class="catalog__product-picture">
                   <source media="(min-width: 1200px)"
                     srcset="img/catalog/catalog-photo-4-desctop@1x.webp 1x, img/catalog/catalog-photo-4-desctop@2x.webp 2x">
@@ -263,8 +267,7 @@
         <div class="video__description-content">
           <h2 class="video__description-title">Все еще сомневаетесь?
           </h2>
-          <p class="video__description-text">Смотрите видеопрезентацию и скорее&nbsp;за билетами, пока они
-            не&nbsp;подорожали в очередной раз!
+          <p class="video__description-text">Смотрите видеопрезентацию и скорее&nbsp;за билетами, пока они <br class="breaker breaker--tablet"> не подорожали в очередной раз!
           </p>
         </div>
 
@@ -282,7 +285,7 @@
               srcset="img/video/video-photo-1-tablet@1x.jpg 1x, img/video/video-photo-1-tablet@2x.jpg 2x">
             <img class="video__player-image video-player__image" src="img/video/video-photo-1@1x.jpg"
               srcset="img/video/video-photo-1@2x.jpg 2x" width="280" height="177"
-              alt="Дорога среди пустынных каньонов.">
+              alt="Дорога среди пустынных каньонов." loading="lazy">
           </picture>
           <button class="video__player-button video-player__button" type="button">
             <span class="visually-hidden">Воспроизвести видео</span>
