@@ -10,6 +10,10 @@
   <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/ptsans.woff" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold2.woff" type="font/woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body class="page__body">
@@ -282,7 +286,7 @@
               srcset="img/video/video-photo-1-tablet@1x.jpg 1x, img/video/video-photo-1-tablet@2x.jpg 2x">
             <img class="video__player-image video-player__image" src="img/video/video-photo-1@1x.jpg"
               srcset="img/video/video-photo-1@2x.jpg 2x" width="280" height="177"
-              alt="Дорога среди пустынных каньонов.">
+              alt="Дорога среди пустынных каньонов." loading="lazy">
           </picture>
           <button class="video__player-button video-player__button" type="button">
             <span class="visually-hidden">Воспроизвести видео</span>
