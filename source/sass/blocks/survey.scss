@@ -50,8 +50,16 @@
     margin-bottom: 15px;
   }
 
+  .breaker {
+    display: none;
+  }
+
   @media (min-width: $width-tablet) {
     line-height: 24px;
+
+    .breaker--tablet {
+      display: inline;
+    }
   }
 }
 

@@ -41,6 +41,16 @@
   &:not(:last-child) {
     margin-bottom: 15px;
   }
+
+  .breaker {
+    display: none;
+  }
+
+  @media (min-width: $width-tablet) {
+    .breaker--tablet {
+      display: inline;
+    }
+  }
 }
 
 // .video__player-wrapper {

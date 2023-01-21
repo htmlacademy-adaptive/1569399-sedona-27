@@ -32,21 +32,15 @@
 
     @media (min-width: $width-tablet) {
       margin-bottom: 29px;
+
+      .breaker--tablet {
+        display: none;
+      }
     }
   }
 
   @media (min-width: $width-tablet) {
     font-size: 21px;
-  }
-
-  br {
-    display: none;
-  }
-
-  @media (max-width: $width-mobile) {
-    br {
-      display: block;
-    }
   }
 }
 
@@ -191,8 +185,16 @@
 .advantages__title {
   @include title;
 
+  .breaker {
+    display: none;
+  }
+
   @media (min-width: $width-tablet) {
     font-size: 21px;
+
+    .breaker--tablet {
+      display: inline;
+    }
   }
 
   &:not(:last-child) {
@@ -202,6 +204,7 @@
   &--accent {
     color: $color-main;
   }
+
 }
 
 .advantages__number {
@@ -222,6 +225,34 @@
 
   &:not(:last-child) {
     margin-bottom: 15px;
+  }
+
+  .breaker {
+    display: none;
+
+    &--mobile {
+      display: inline;
+    }
+  }
+
+  @media (min-width: $width-tablet) {
+    .breaker--mobile {
+      display: none;
+    }
+
+    .breaker--tablet {
+      display: inline;
+    }
+  }
+
+  @media (min-width: $width-desctop) {
+    .breaker {
+      display: none;
+    }
+
+    .breaker--desctop {
+      display: inline;
+    }
   }
 }
 
@@ -330,6 +361,16 @@
 
 .advantages__sub-text {
   @include text;
+
+  .breaker {
+    display: none;
+  }
+
+  @media (min-width: $width-tablet) {
+    .breaker--tablet {
+      display: inline;
+    }
+  }
 
   &:not(:last-child) {
     margin-bottom: 15px;

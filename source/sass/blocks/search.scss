@@ -57,6 +57,16 @@
       margin-bottom: 45px;
     }
   }
+
+  .breaker {
+    display: none;
+
+    @media (min-width: $width-tablet) {
+      &--tablet {
+        display: inline;
+      }
+    }
+  }
 }
 
 .search__button {
