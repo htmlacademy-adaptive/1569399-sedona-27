@@ -18,8 +18,6 @@
 
 .page__container {
   @include margin-0-auto();
-
-  // width: 320px;
   width: 100%;
   min-width: 300px;
   max-width: 1200px;
