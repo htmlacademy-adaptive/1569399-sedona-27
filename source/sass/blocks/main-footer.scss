@@ -55,5 +55,10 @@
   }
 }
 
-// .main-footer__copyright {
-// }
+.main-footer__copyright {
+  &--accent {
+    position: relative;
+    right: 18px;
+    top: -4px;
+  }
+}
