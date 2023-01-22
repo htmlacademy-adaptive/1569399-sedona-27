@@ -145,6 +145,8 @@
 
   width: 100%;
   text-align: center;
+  cursor: text;
+
 
   &:not(:last-child) {
     margin-bottom: 21px;
@@ -269,7 +271,8 @@
   background-color: $color-surface;
 
   &::placeholder {
-    color: $color-secondary-03;
+    color: $color-surface-pralceholder;
+    opacity: 1;
   }
 
   &:hover {
@@ -445,6 +448,7 @@
 
   &::placeholder {
     color: $color-secondary-03;
+    opacity: 1;
   }
 
   &:hover {
