@@ -151,6 +151,7 @@
 
     &--accent {
       padding: 33px;
+      padding-top: 52px;
     }
 
     &--accent-secondary {
@@ -194,6 +195,12 @@
 
     .breaker--tablet {
       display: inline;
+    }
+  }
+
+  @media (min-width: $width-desctop) {
+    &--secondary {
+      margin-top: 15px;
     }
   }
 
